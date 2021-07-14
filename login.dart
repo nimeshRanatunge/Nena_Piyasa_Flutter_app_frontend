@@ -50,7 +50,7 @@ class _loginScreenState extends State<loginScreen> {
                   ),
                   prefixIcon: Icon(
                     Icons.email,
-                    color: Color(0xff5ac18e),
+                    color: Colors.black,
                   )
               )
           ),
@@ -99,7 +99,7 @@ class _loginScreenState extends State<loginScreen> {
                   ),
                   prefixIcon: Icon(
                     Icons.lock,
-                    color: Color(0xff5ac18e),
+                    color: Colors.black,
                   )
               )
           ),
@@ -163,7 +163,7 @@ class _loginScreenState extends State<loginScreen> {
         child: Text(
           'LOGIN',
           style: TextStyle(
-            color: Color(0xff5ac18e),
+            color: Colors.black,
             fontSize: 18,
             fontWeight: FontWeight.bold,
           ),
@@ -214,10 +214,11 @@ class _loginScreenState extends State<loginScreen> {
                     begin: Alignment.topCenter,
                     end: Alignment.bottomCenter,
                     colors: [
-                      Color(0xff5ac18e),
-                      Color(0xcc5ac18e),
-                      Color(0x995ac18e),
-                      Color(0x665ac18e),
+                      Colors.blue.shade300,
+                      Colors.blue.shade600,
+
+                      // Colors.blue.shade800,
+                      // Colors.blue.shade800,
                     ]
                   )
                 ),
@@ -242,7 +243,7 @@ class _loginScreenState extends State<loginScreen> {
                          ],
                        ),
                        SizedBox(height: 20,),
-                       Text('Sign In', style: TextStyle(
+                       Text('Log In', style: TextStyle(
                            color: Colors.white,
                            fontSize: 40,
                            fontWeight: FontWeight.bold
