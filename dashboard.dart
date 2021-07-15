@@ -24,7 +24,7 @@ class Dashboard extends StatelessWidget {
                     end: Alignment.bottomCenter,
                     colors: [
                       Colors.blue.shade300,
-                      Colors.blue.shade600,
+                      Colors.blue.shade900,
 
                     ]
                 )
@@ -174,7 +174,7 @@ class Dashboard extends StatelessWidget {
                             ),
                           ),
                         ),
-                        onPressed: (){},
+                        onPressed: (){Navigator.of(context).pushNamed('/submgt');},
                       ),
                       ElevatedButton(
                         style: ElevatedButton.styleFrom(

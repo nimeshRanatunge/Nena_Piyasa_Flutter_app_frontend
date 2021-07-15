@@ -22,7 +22,7 @@ class myProfile extends StatelessWidget {
                   end: Alignment.bottomCenter,
                   colors: [
                     Colors.blue.shade300,
-                    Colors.blue.shade700,
+                    Colors.blue.shade900,
                   ]
               )
           ),
@@ -32,7 +32,7 @@ class myProfile extends StatelessWidget {
                 padding: const EdgeInsets.all(22.0),
                 child: Center(
                   child: Text(
-                    "My Profile",
+                    "My Profile".toUpperCase(),
                     style: TextStyle(
                         color: Colors.white,
                         fontSize: 28.0,
@@ -57,19 +57,19 @@ class myProfile extends StatelessWidget {
                       height: 50.0,
                       color: Colors.grey,
                     ),
-                    Text('NAME', style: TextStyle(color: Colors.black, letterSpacing: 2.0, fontWeight: FontWeight.bold, ),),
+                    Text('NAME', style: TextStyle(color: Colors.white, letterSpacing: 2.0, fontWeight: FontWeight.bold, ),),
                     SizedBox(height: 10.0,),
-                    Text('Nimesh Ranatunge', style: TextStyle(color: Colors.black54, letterSpacing: 1.0, fontSize:25.0,fontWeight: FontWeight.bold ),),
+                    Text('Nimesh Ranatunge', style: TextStyle(color: Colors.black54, letterSpacing: 1.0, fontSize:20.0,fontWeight: FontWeight.bold ),),
                     SizedBox(height: 30.0,),
 
-                    Text('User ID', style: TextStyle(color: Colors.black, letterSpacing: 2.0, fontWeight: FontWeight.bold, ),),
+                    Text('User ID', style: TextStyle(color: Colors.white, letterSpacing: 2.0, fontWeight: FontWeight.bold, ),),
                     SizedBox(height: 10.0,),
-                    Text('ADM002', style: TextStyle(color: Colors.black54, letterSpacing: 1.0, fontSize:26.0,fontWeight: FontWeight.bold ),),
+                    Text('ADM002', style: TextStyle(color: Colors.black54, letterSpacing: 1.0, fontSize:20.0,fontWeight: FontWeight.bold ),),
                     SizedBox(height: 30.0,),
 
-                    Text('Official Position', style: TextStyle(color: Colors.black, letterSpacing: 2.0, fontWeight: FontWeight.bold, ),),
+                    Text('Official Position', style: TextStyle(color: Colors.white, letterSpacing: 2.0, fontWeight: FontWeight.bold, ),),
                     SizedBox(height: 10.0,),
-                    Text('Section Head - Grade 11', style: TextStyle(color: Colors.black54, letterSpacing: 1.0, fontSize:25.0,fontWeight: FontWeight.bold ),),
+                    Text('Section Head - Grade 11', style: TextStyle(color: Colors.black54, letterSpacing: 1.0, fontSize:20.0,fontWeight: FontWeight.bold ),),
                     SizedBox(height: 30.0,),
                     Container(
                       padding: EdgeInsets.symmetric(vertical: 25, horizontal: 70),
@@ -87,7 +87,7 @@ class myProfile extends StatelessWidget {
                         child: Text(
                           'Change Password',
                           style: TextStyle(
-                            color: Colors.black,
+                            color: Colors.blue.shade900,
                             fontSize: 18,
                             fontWeight: FontWeight.bold,
                           ),
@@ -110,7 +110,7 @@ class myProfile extends StatelessWidget {
                         child: Text(
                           'Log Out',
                           style: TextStyle(
-                            color: Colors.black,
+                            color: Colors.blue.shade900,
                             fontSize: 18,
                             fontWeight: FontWeight.bold,
                           ),

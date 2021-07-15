@@ -4,6 +4,7 @@ import 'package:flutter/services.dart';
 import 'dashboard.dart';
 import 'login.dart';
 import 'myProfile.dart';
+import 'subject_management.dart';
 
 void main() {
   runApp(const MyApp());
@@ -27,6 +28,7 @@ class MyApp extends StatelessWidget {
       routes: <String, WidgetBuilder>{
         '/dash' : (context)=>Dashboard(),
         '/mypro' : (context)=>myProfile(),
+        '/submgt' : (context)=>SubMgt(),
       },
     );
   }
