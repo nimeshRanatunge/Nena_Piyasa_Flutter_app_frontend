@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 class Dashboard extends StatelessWidget {
@@ -37,8 +38,29 @@ class Dashboard extends StatelessWidget {
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
-                      Icon(Icons.menu, color: Colors.white, size: 50.0,),
-                      Image.asset("assets/pro2.png", width: 50.0,)
+                      CircleAvatar(
+                        backgroundColor: Colors.grey[200],
+                        child: IconButton(
+                          icon: Icon(
+                            Icons.menu,
+                            color: Colors.black,
+                          ),
+                          onPressed: () {},
+                        ),
+                      ),
+
+                      Row(
+                        children: [
+                          IconButton(
+                            icon: Icon(Icons.notifications_active),
+                            onPressed: (){},
+                            iconSize: 30.0,
+                            color: Colors.black54,
+                          ),
+                          SizedBox(width: 10.0,),
+                          Image.asset("assets/pro2.png", width: 50.0,),
+                        ],
+                      )
                     ],
                   ),
                 ),
