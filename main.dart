@@ -4,6 +4,7 @@ import 'package:flutter/services.dart';
 import 'dashboard.dart';
 import 'login.dart';
 import 'myProfile.dart';
+import 'notice_board.dart';
 import 'subject_management.dart';
 
 void main() {
@@ -29,6 +30,7 @@ class MyApp extends StatelessWidget {
         '/dash' : (context)=>Dashboard(),
         '/mypro' : (context)=>myProfile(),
         '/submgt' : (context)=>SubMgt(),
+        '/noticeb' : (context)=>NoticeB(),
       },
     );
   }

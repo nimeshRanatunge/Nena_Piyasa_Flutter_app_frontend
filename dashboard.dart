@@ -317,7 +317,9 @@ class Dashboard extends StatelessWidget {
                               ),
                             ),
                           ),
-                          onPressed: (){},
+                          onPressed: (){
+                            Navigator.of(context).pushNamed('/noticeb');
+                          },
                         ),
                       ],
                     ),
