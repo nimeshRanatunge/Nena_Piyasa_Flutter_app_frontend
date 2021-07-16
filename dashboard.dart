@@ -72,260 +72,260 @@ class Dashboard extends StatelessWidget {
                         "Hello Admin!",
                         style: TextStyle(
                             color: Colors.white,
-                            fontSize: 28.0,
+                            fontSize: 20.0,
                             fontWeight: FontWeight.bold
                         ),
                       ),
                     ),
                   ),
-                  Padding(
-                    padding: const EdgeInsets.fromLTRB(55.0, 30.0, 48.0, 48.0),
-                    child: Wrap(
-                      spacing: 25.0,
-                      runSpacing: 30.0,
-                      children: [
-                        ElevatedButton(
-                          style: ElevatedButton.styleFrom(
-                              shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10.0)),
-                              primary: Colors.blue,
-                              padding: EdgeInsets.all(0)
-                          ),
-                          child: Container(
-                            child: SizedBox(
-                              width: 140.0,
-                              height: 140.0,
-                              child: Card(
-                                color: Color.fromARGB(200, 20, 21, 21),
-                                elevation: 2.0,
-                                shape: RoundedRectangleBorder(
-                                  borderRadius: BorderRadius.circular(10.0),
+                    SizedBox(height: 18.0,),
+                    Center(
+                      child: Wrap(
+                        spacing: 25.0,
+                        runSpacing: 30.0,
+                        children: [
+                          ElevatedButton(
+                            style: ElevatedButton.styleFrom(
+                                shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10.0)),
+                                primary: Colors.blue.shade700,
+                                padding: EdgeInsets.all(0)
+                            ),
+                            child: Container(
+                              child: SizedBox(
+                                width: 140.0,
+                                height: 140.0,
+                                child: Card(
+                                  color: Color.fromARGB(200, 20, 21, 21),
+                                  elevation: 2.0,
+                                  shape: RoundedRectangleBorder(
+                                    borderRadius: BorderRadius.circular(10.0),
+                                  ),
+                                  child: Center(
+                                    child: Padding(
+                                      padding: const EdgeInsets.all(8.0),
+                                      child: Column(
+                                        children: [
+                                          SizedBox(height: 15.0),
+                                          Image.asset("assets/userX.png", width: 58.0,),
+                                          SizedBox(height: 15.0),
+                                          Text("My Profile", style: TextStyle(
+                                              color: Colors.white,
+                                              fontWeight: FontWeight.bold,
+                                              fontSize: 16.0
+                                          ),),
+                                        ],
+                                      ),
+                                    ),
+                                  ),
                                 ),
-                                child: Center(
-                                  child: Padding(
-                                    padding: const EdgeInsets.all(8.0),
-                                    child: Column(
-                                      children: [
-                                        SizedBox(height: 15.0),
-                                        Image.asset("assets/userX.png", width: 58.0,),
-                                        SizedBox(height: 15.0),
-                                        Text("My Profile", style: TextStyle(
+                              ),
+                            ),
+                            onPressed: (){
+                              Navigator.of(context).pushNamed('/mypro');
+                            },
+                          ),
+
+                          ElevatedButton(
+                            style: ElevatedButton.styleFrom(
+                                shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10.0)),
+                                primary: Colors.blue.shade700,
+                                padding: EdgeInsets.all(0)
+                            ),
+                            child: Container(
+                              child: SizedBox(
+                                width: 140.0,
+                                height: 140.0,
+                                child: Card(
+                                  color: Color.fromARGB(200, 20, 21, 21),
+                                  elevation: 2.0,
+                                  shape: RoundedRectangleBorder(
+                                    borderRadius: BorderRadius.circular(10.0),
+                                  ),
+                                  child: Center(
+                                    child: Padding(
+                                      padding: const EdgeInsets.all(8.0),
+                                      child: Column(
+                                        mainAxisAlignment: MainAxisAlignment.center,
+                                        children: [
+                                          Image.asset("assets/team.png", width: 60.0,),
+                                          SizedBox(height: 10.0),
+                                          Text("User Management", style: TextStyle(
                                             color: Colors.white,
                                             fontWeight: FontWeight.bold,
-                                            fontSize: 17.0
-                                        ),),
-                                      ],
+                                            fontSize: 16.0,
+                                          ),textAlign: TextAlign.center,),
+                                        ],
+                                      ),
                                     ),
                                   ),
                                 ),
                               ),
                             ),
+                            onPressed: (){
+                              Navigator.of(context).pushNamed('/usermgt');
+                            },
                           ),
-                          onPressed: (){
-                            Navigator.of(context).pushNamed('/mypro');
-                          },
-                        ),
 
-                        ElevatedButton(
-                          style: ElevatedButton.styleFrom(
-                              shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10.0)),
-                              primary: Colors.blue,
-                              padding: EdgeInsets.all(0)
-                          ),
-                          child: Container(
-                            child: SizedBox(
-                              width: 140.0,
-                              height: 140.0,
-                              child: Card(
-                                color: Color.fromARGB(200, 20, 21, 21),
-                                elevation: 2.0,
-                                shape: RoundedRectangleBorder(
-                                  borderRadius: BorderRadius.circular(10.0),
-                                ),
-                                child: Center(
-                                  child: Padding(
-                                    padding: const EdgeInsets.all(8.0),
-                                    child: Column(
-                                      mainAxisAlignment: MainAxisAlignment.center,
-                                      children: [
-                                        Image.asset("assets/team.png", width: 60.0,),
-                                        SizedBox(height: 10.0),
-                                        Text("User Management", style: TextStyle(
-                                          color: Colors.white,
-                                          fontWeight: FontWeight.bold,
-                                          fontSize: 17.0,
-                                        ),textAlign: TextAlign.center,),
-                                      ],
+                          ElevatedButton(
+                            style: ElevatedButton.styleFrom(
+                                shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10.0)),
+                                primary: Colors.blue.shade800,
+                                padding: EdgeInsets.all(0)
+                            ),
+                            child: Container(
+                              child: SizedBox(
+                                width: 140.0,
+                                height: 140.0,
+                                child: Card(
+                                  color: Color.fromARGB(200, 20, 21, 21),
+                                  elevation: 2.0,
+                                  shape: RoundedRectangleBorder(
+                                    borderRadius: BorderRadius.circular(10.0),
+                                  ),
+                                  child: Center(
+                                    child: Padding(
+                                      padding: const EdgeInsets.all(8.0),
+                                      child: Column(
+                                        children: [
+                                          SizedBox(height: 6.0),
+                                          Image.asset("assets/book.png", width: 58.0,),
+                                          SizedBox(height: 10.0),
+                                          Text("Subject Management", style: TextStyle(
+                                              color: Colors.white,
+                                              fontWeight: FontWeight.bold,
+                                              fontSize: 16.0
+                                          ),textAlign: TextAlign.center,),
+                                        ],
+                                      ),
                                     ),
                                   ),
                                 ),
                               ),
                             ),
+                            onPressed: (){ Navigator.of(context).pushNamed('/submgt');},
                           ),
-                          onPressed: (){
-                            Navigator.of(context).pushNamed('/usermgt');
-                          },
-                        ),
 
-                        ElevatedButton(
-                          style: ElevatedButton.styleFrom(
-                              shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10.0)),
-                              primary: Colors.blue,
-                              padding: EdgeInsets.all(0)
-                          ),
-                          child: Container(
-                            child: SizedBox(
-                              width: 140.0,
-                              height: 140.0,
-                              child: Card(
-                                color: Color.fromARGB(200, 20, 21, 21),
-                                elevation: 2.0,
-                                shape: RoundedRectangleBorder(
-                                  borderRadius: BorderRadius.circular(10.0),
-                                ),
-                                child: Center(
-                                  child: Padding(
-                                    padding: const EdgeInsets.all(8.0),
-                                    child: Column(
-                                      children: [
-                                        SizedBox(height: 6.0),
-                                        Image.asset("assets/book.png", width: 58.0,),
-                                        SizedBox(height: 10.0),
-                                        Text("Subject Management", style: TextStyle(
-                                            color: Colors.white,
-                                            fontWeight: FontWeight.bold,
-                                            fontSize: 17.0
-                                        ),textAlign: TextAlign.center,),
-                                      ],
+                          ElevatedButton(
+                            style: ElevatedButton.styleFrom(
+                                shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10.0)),
+                                primary: Colors.blue.shade800,
+                                padding: EdgeInsets.all(0)
+                            ),
+                            child: Container(
+                              child: SizedBox(
+                                width: 140.0,
+                                height: 140.0,
+                                child: Card(
+                                  color: Color.fromARGB(200, 20, 21, 21),
+                                  elevation: 2.0,
+                                  shape: RoundedRectangleBorder(
+                                    borderRadius: BorderRadius.circular(10.0),
+                                  ),
+                                  child: Center(
+                                    child: Padding(
+                                      padding: const EdgeInsets.all(8.0),
+                                      child: Column(
+                                        children: [
+                                          SizedBox(height: 2.0),
+                                          Image.asset("assets/presentation.png", width: 64.0,),
+                                          SizedBox(height: 10.0),
+                                          Text("Class Management", style: TextStyle(
+                                              color: Colors.white,
+                                              fontWeight: FontWeight.bold,
+                                              fontSize: 16.0
+                                          ),textAlign: TextAlign.center,),
+                                        ],
+                                      ),
                                     ),
                                   ),
                                 ),
                               ),
                             ),
+                            onPressed: (){},
                           ),
-                          onPressed: (){ Navigator.of(context).pushNamed('/submgt');},
-                        ),
 
-                        ElevatedButton(
-                          style: ElevatedButton.styleFrom(
-                              shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10.0)),
-                              primary: Colors.blue,
-                              padding: EdgeInsets.all(0)
-                          ),
-                          child: Container(
-                            child: SizedBox(
-                              width: 140.0,
-                              height: 140.0,
-                              child: Card(
-                                color: Color.fromARGB(200, 20, 21, 21),
-                                elevation: 2.0,
-                                shape: RoundedRectangleBorder(
-                                  borderRadius: BorderRadius.circular(10.0),
-                                ),
-                                child: Center(
-                                  child: Padding(
-                                    padding: const EdgeInsets.all(8.0),
-                                    child: Column(
-                                      children: [
-                                        SizedBox(height: 2.0),
-                                        Image.asset("assets/presentation.png", width: 64.0,),
-                                        SizedBox(height: 10.0),
-                                        Text("Class Management", style: TextStyle(
-                                            color: Colors.white,
-                                            fontWeight: FontWeight.bold,
-                                            fontSize: 17.0
-                                        ),textAlign: TextAlign.center,),
-                                      ],
+                          ElevatedButton(
+                            style: ElevatedButton.styleFrom(
+                                shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10.0)),
+                                primary: Colors.blue.shade900,
+                                padding: EdgeInsets.all(0)
+                            ),
+                            child: Container(
+                              child: SizedBox(
+                                width: 140.0,
+                                height: 140.0,
+                                child: Card(
+                                  color: Color.fromARGB(200, 20, 21, 21),
+                                  elevation: 2.0,
+                                  shape: RoundedRectangleBorder(
+                                    borderRadius: BorderRadius.circular(10.0),
+                                  ),
+                                  child: Center(
+                                    child: Padding(
+                                      padding: const EdgeInsets.all(8.0),
+                                      child: Column(
+                                        children: [
+                                          SizedBox(height: 6.0),
+                                          Image.asset("assets/loudspeaker.png", width: 48.0,),
+                                          SizedBox(height: 10.0),
+                                          Text("Announcement Management", style: TextStyle(
+                                              color: Colors.white,
+                                              fontWeight: FontWeight.bold,
+                                              fontSize: 16.0
+                                          ),textAlign: TextAlign.center,),
+                                        ],
+                                      ),
                                     ),
                                   ),
                                 ),
                               ),
                             ),
+                            onPressed: (){},
                           ),
-                          onPressed: (){},
-                        ),
 
-                        ElevatedButton(
-                          style: ElevatedButton.styleFrom(
-                              shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10.0)),
-                              primary: Colors.blue,
-                              padding: EdgeInsets.all(0)
-                          ),
-                          child: Container(
-                            child: SizedBox(
-                              width: 140.0,
-                              height: 140.0,
-                              child: Card(
-                                color: Color.fromARGB(200, 20, 21, 21),
-                                elevation: 2.0,
-                                shape: RoundedRectangleBorder(
-                                  borderRadius: BorderRadius.circular(10.0),
-                                ),
-                                child: Center(
-                                  child: Padding(
-                                    padding: const EdgeInsets.all(8.0),
-                                    child: Column(
-                                      children: [
-                                        SizedBox(height: 6.0),
-                                        Image.asset("assets/loudspeaker.png", width: 48.0,),
-                                        SizedBox(height: 10.0),
-                                        Text("Announcement Management", style: TextStyle(
-                                            color: Colors.white,
-                                            fontWeight: FontWeight.bold,
-                                            fontSize: 17.0
-                                        ),textAlign: TextAlign.center,),
-                                      ],
+                          ElevatedButton(
+                            style: ElevatedButton.styleFrom(
+                                shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10.0)),
+                                primary: Colors.blue.shade900,
+                                padding: EdgeInsets.all(0)
+                            ),
+                            child: Container(
+                              child: SizedBox(
+                                width: 140.0,
+                                height: 140.0,
+                                child: Card(
+                                  color: Color.fromARGB(200, 20, 21, 21),
+                                  elevation: 2.0,
+                                  shape: RoundedRectangleBorder(
+                                    borderRadius: BorderRadius.circular(10.0),
+                                  ),
+                                  child: Center(
+                                    child: Padding(
+                                      padding: const EdgeInsets.all(8.0),
+                                      child: Column(
+                                        children: [
+                                          SizedBox(height: 15.0),
+                                          Image.asset("assets/noticeboard.png", width: 48.0,),
+                                          SizedBox(height: 10.0),
+                                          Text("Notice Board", style: TextStyle(
+                                              color: Colors.white,
+                                              fontWeight: FontWeight.bold,
+                                              fontSize: 16.0
+                                          ),textAlign: TextAlign.center,),
+                                        ],
+                                      ),
                                     ),
                                   ),
                                 ),
                               ),
                             ),
+                            onPressed: (){
+                              Navigator.of(context).pushNamed('/noticeb');
+                            },
                           ),
-                          onPressed: (){},
-                        ),
-
-                        ElevatedButton(
-                          style: ElevatedButton.styleFrom(
-                              shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10.0)),
-                              primary: Colors.blue,
-                              padding: EdgeInsets.all(0)
-                          ),
-                          child: Container(
-                            child: SizedBox(
-                              width: 140.0,
-                              height: 140.0,
-                              child: Card(
-                                color: Color.fromARGB(200, 20, 21, 21),
-                                elevation: 2.0,
-                                shape: RoundedRectangleBorder(
-                                  borderRadius: BorderRadius.circular(10.0),
-                                ),
-                                child: Center(
-                                  child: Padding(
-                                    padding: const EdgeInsets.all(8.0),
-                                    child: Column(
-                                      children: [
-                                        SizedBox(height: 15.0),
-                                        Image.asset("assets/noticeboard.png", width: 48.0,),
-                                        SizedBox(height: 10.0),
-                                        Text("Notice Board", style: TextStyle(
-                                            color: Colors.white,
-                                            fontWeight: FontWeight.bold,
-                                            fontSize: 17.0
-                                        ),textAlign: TextAlign.center,),
-                                      ],
-                                    ),
-                                  ),
-                                ),
-                              ),
-                            ),
-                          ),
-                          onPressed: (){
-                            Navigator.of(context).pushNamed('/noticeb');
-                          },
-                        ),
-                      ],
+                        ],
+                      ),
                     ),
-                  ),
                 ],
               ),
             ),
