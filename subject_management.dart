@@ -17,16 +17,18 @@ class _SubMgtState extends State<SubMgt> {
       //backgroundColor: decor,
       appBar: AppBar(
         backgroundColor: Colors.blue.shade800,
-        title: Center(
-          child: Text(
-            "Subject Management".toUpperCase(),
-            style: TextStyle(
-                color: Colors.white,
-                fontSize: 21.0,
-                fontWeight: FontWeight.bold
-            ),
-          ),
+        title:
+          Padding(
+            padding: const EdgeInsets.all(18.0),
+            child: Text(
+              "Subject Management".toUpperCase(),
+              style: TextStyle(
+                  color: Colors.white,
+                  fontSize: 21.0,
+                  fontWeight: FontWeight.bold
+              ),
         ),
+          ),
       ),
       body: SafeArea(
 

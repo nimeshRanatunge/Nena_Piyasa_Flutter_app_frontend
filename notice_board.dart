@@ -15,16 +15,19 @@ class _NoticeBState extends State<NoticeB> {
       //backgroundColor: decor,
       appBar: AppBar(
         backgroundColor: Colors.blue.shade800,
-        title: Center(
-          child: Text(
-            "notice board".toUpperCase(),
-            style: TextStyle(
-                color: Colors.white,
-                fontSize: 21.0,
-                fontWeight: FontWeight.bold
-            ),
+        title:
+           Padding(
+             padding: const EdgeInsets.only(left: 66.0),
+             child: Text(
+              "notice board".toUpperCase(),
+              style: TextStyle(
+                  color: Colors.white,
+                  fontSize: 21.0,
+                  fontWeight: FontWeight.bold
+              ),
           ),
-        ),
+           ),
+
       ),
       body: SafeArea(
 

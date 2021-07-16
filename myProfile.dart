@@ -26,101 +26,103 @@ class myProfile extends StatelessWidget {
                   ]
               )
           ),
-          child: Column(
-            children: [
-              Padding(
-                padding: const EdgeInsets.all(22.0),
-                child: Center(
-                  child: Text(
-                    "My Profile".toUpperCase(),
-                    style: TextStyle(
-                        color: Colors.white,
-                        fontSize: 28.0,
-                        fontWeight: FontWeight.bold
+          child: SingleChildScrollView(
+            child: Column(
+              children: [
+                Padding(
+                  padding: const EdgeInsets.all(22.0),
+                  child: Center(
+                    child: Text(
+                      "My Profile".toUpperCase(),
+                      style: TextStyle(
+                          color: Colors.white,
+                          fontSize: 28.0,
+                          fontWeight: FontWeight.bold
+                      ),
                     ),
                   ),
                 ),
-              ),
-              Padding(
-                padding: EdgeInsets.fromLTRB(30.0, 10.0, 30.0, 0.0),
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Center(
-                      child: CircleAvatar(
-                        backgroundImage: AssetImage('assets/pro2.png',),
-                        radius: 70.0,
+                Padding(
+                  padding: EdgeInsets.fromLTRB(30.0, 10.0, 30.0, 0.0),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Center(
+                        child: CircleAvatar(
+                          backgroundImage: AssetImage('assets/pro2.png',),
+                          radius: 70.0,
 
-                      ),
-                    ),
-                    Divider(
-                      height: 50.0,
-                      color: Colors.grey,
-                    ),
-                    Text('NAME', style: TextStyle(color: Colors.white, letterSpacing: 2.0, fontWeight: FontWeight.bold, ),),
-                    SizedBox(height: 10.0,),
-                    Text('Nimesh Ranatunge', style: TextStyle(color: Colors.black54, letterSpacing: 1.0, fontSize:20.0,fontWeight: FontWeight.bold ),),
-                    SizedBox(height: 30.0,),
-
-                    Text('User ID', style: TextStyle(color: Colors.white, letterSpacing: 2.0, fontWeight: FontWeight.bold, ),),
-                    SizedBox(height: 10.0,),
-                    Text('ADM002', style: TextStyle(color: Colors.black54, letterSpacing: 1.0, fontSize:20.0,fontWeight: FontWeight.bold ),),
-                    SizedBox(height: 30.0,),
-
-                    Text('Official Position', style: TextStyle(color: Colors.white, letterSpacing: 2.0, fontWeight: FontWeight.bold, ),),
-                    SizedBox(height: 10.0,),
-                    Text('Section Head - Grade 11', style: TextStyle(color: Colors.black54, letterSpacing: 1.0, fontSize:20.0,fontWeight: FontWeight.bold ),),
-                    SizedBox(height: 30.0,),
-                    Container(
-                      padding: EdgeInsets.symmetric(vertical: 25, horizontal: 70),
-                      width: double.infinity,
-                      child: RaisedButton(
-                        elevation: 5,
-                        onPressed: (){
-                          Navigator.of(context).pushNamed('/dash');
-                        },
-                        padding: EdgeInsets.all(12),
-                        shape: RoundedRectangleBorder(
-                            borderRadius: BorderRadius.circular(15)
                         ),
-                        color: Colors.white,
-                        child: Text(
-                          'Change Password',
-                          style: TextStyle(
-                            color: Colors.blue.shade900,
-                            fontSize: 18,
-                            fontWeight: FontWeight.bold,
+                      ),
+                      Divider(
+                        height: 50.0,
+                        color: Colors.grey,
+                      ),
+                      Text('NAME', style: TextStyle(color: Colors.white, letterSpacing: 2.0, fontWeight: FontWeight.bold, ),),
+                      SizedBox(height: 10.0,),
+                      Text('Nimesh Ranatunge', style: TextStyle(color: Colors.black54, letterSpacing: 1.0, fontSize:20.0,fontWeight: FontWeight.bold ),),
+                      SizedBox(height: 30.0,),
+
+                      Text('User ID', style: TextStyle(color: Colors.white, letterSpacing: 2.0, fontWeight: FontWeight.bold, ),),
+                      SizedBox(height: 10.0,),
+                      Text('ADM002', style: TextStyle(color: Colors.black54, letterSpacing: 1.0, fontSize:20.0,fontWeight: FontWeight.bold ),),
+                      SizedBox(height: 30.0,),
+
+                      Text('Official Position', style: TextStyle(color: Colors.white, letterSpacing: 2.0, fontWeight: FontWeight.bold, ),),
+                      SizedBox(height: 10.0,),
+                      Text('Section Head - Grade 11', style: TextStyle(color: Colors.black54, letterSpacing: 1.0, fontSize:20.0,fontWeight: FontWeight.bold ),),
+                      SizedBox(height: 30.0,),
+                      Container(
+                        padding: EdgeInsets.symmetric(vertical: 25, horizontal: 70),
+                        width: double.infinity,
+                        child: RaisedButton(
+                          elevation: 5,
+                          onPressed: (){
+                            Navigator.of(context).pushNamed('/dash');
+                          },
+                          padding: EdgeInsets.all(12),
+                          shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(15)
+                          ),
+                          color: Colors.white,
+                          child: Text(
+                            'Change Password',
+                            style: TextStyle(
+                              color: Colors.blue.shade900,
+                              fontSize: 18,
+                              fontWeight: FontWeight.bold,
+                            ),
                           ),
                         ),
                       ),
-                    ),
-                    Container(
-                      padding: EdgeInsets.symmetric(vertical: 0, horizontal: 70),
-                      width: double.infinity,
-                      child: RaisedButton(
-                        elevation: 5,
-                        onPressed: (){
-                          Navigator.of(context).pushNamed('/dash');
-                        },
-                        padding: EdgeInsets.all(12),
-                        shape: RoundedRectangleBorder(
-                            borderRadius: BorderRadius.circular(15)
-                        ),
-                        color: Colors.white,
-                        child: Text(
-                          'Log Out',
-                          style: TextStyle(
-                            color: Colors.blue.shade900,
-                            fontSize: 18,
-                            fontWeight: FontWeight.bold,
+                      Container(
+                        padding: EdgeInsets.symmetric(vertical: 0, horizontal: 70),
+                        width: double.infinity,
+                        child: RaisedButton(
+                          elevation: 5,
+                          onPressed: (){
+                            Navigator.of(context).pushNamed('/dash');
+                          },
+                          padding: EdgeInsets.all(12),
+                          shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(15)
+                          ),
+                          color: Colors.white,
+                          child: Text(
+                            'Log Out',
+                            style: TextStyle(
+                              color: Colors.blue.shade900,
+                              fontSize: 18,
+                              fontWeight: FontWeight.bold,
+                            ),
                           ),
                         ),
                       ),
-                    ),
-                  ],
+                    ],
+                  ),
                 ),
-              ),
-            ],
+              ],
+            ),
           ),
         ),
       ),
