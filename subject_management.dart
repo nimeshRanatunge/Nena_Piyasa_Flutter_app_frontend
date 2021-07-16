@@ -618,7 +618,7 @@ class _SubMgtState extends State<SubMgt> {
                 Padding(
                   padding: const EdgeInsets.fromLTRB(30, 20, 30, 10),
                   child: ElevatedButton(
-                    onPressed: (){},
+                    onPressed: (){ Navigator.of(context).pushNamed('/addnewsub');},
                     child: Text("add new subject".toUpperCase(), style: TextStyle(fontSize: 14, fontWeight:FontWeight.w900),),
                     style: ButtonStyle(
                         padding: MaterialStateProperty.all<EdgeInsets>(EdgeInsets.symmetric(horizontal: 25.0, vertical: 10.0)),

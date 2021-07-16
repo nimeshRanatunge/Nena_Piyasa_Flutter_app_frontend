@@ -84,11 +84,11 @@ class myProfile extends StatelessWidget {
                           shape: RoundedRectangleBorder(
                               borderRadius: BorderRadius.circular(15)
                           ),
-                          color: Colors.white,
+                          color: Colors.blue.shade100,
                           child: Text(
                             'Change Password',
                             style: TextStyle(
-                              color: Colors.blue.shade900,
+                              color: Colors.black,
                               fontSize: 18,
                               fontWeight: FontWeight.bold,
                             ),
@@ -107,11 +107,11 @@ class myProfile extends StatelessWidget {
                           shape: RoundedRectangleBorder(
                               borderRadius: BorderRadius.circular(15)
                           ),
-                          color: Colors.white,
+                          color: Colors.blue.shade100,
                           child: Text(
                             'Log Out',
                             style: TextStyle(
-                              color: Colors.blue.shade900,
+                              color: Colors.black,
                               fontSize: 18,
                               fontWeight: FontWeight.bold,
                             ),

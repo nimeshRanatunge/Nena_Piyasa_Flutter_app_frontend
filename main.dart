@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
+import 'add_new_subject.dart';
 import 'dashboard.dart';
 import 'login.dart';
 import 'myProfile.dart';
@@ -31,6 +32,8 @@ class MyApp extends StatelessWidget {
         '/mypro' : (context)=>myProfile(),
         '/submgt' : (context)=>SubMgt(),
         '/noticeb' : (context)=>NoticeB(),
+        '/addnewsub' : (context)=>AddNewSub(),
+
       },
     );
   }
