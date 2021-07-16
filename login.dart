@@ -17,11 +17,11 @@ class _loginScreenState extends State<loginScreen> {
           'User ID',
           style: TextStyle(
               color: Colors.white,
-              fontSize: 16,
+              fontSize: 14,
               fontWeight: FontWeight.bold
           ),
         ),
-        SizedBox(height: 20,),
+        SizedBox(height: 10,),
         Container(
           alignment: Alignment.centerLeft,
           decoration: BoxDecoration(
@@ -35,7 +35,7 @@ class _loginScreenState extends State<loginScreen> {
                 )
               ]
           ),
-          height: 60,
+          height: 50,
           child: TextField(
               keyboardType: TextInputType.emailAddress,
               style: TextStyle(
@@ -47,6 +47,7 @@ class _loginScreenState extends State<loginScreen> {
                   hintText: 'Enter your user ID',
                   hintStyle: TextStyle(
                     color: Colors.black38,
+                    fontSize: 14.0
                   ),
                   prefixIcon: Icon(
                     Icons.email,
@@ -66,11 +67,11 @@ class _loginScreenState extends State<loginScreen> {
           'Password',
           style: TextStyle(
               color: Colors.white,
-              fontSize: 16,
+              fontSize: 14,
               fontWeight: FontWeight.bold
           ),
         ),
-        SizedBox(height: 20,),
+        SizedBox(height: 10,),
         Container(
           alignment: Alignment.centerLeft,
           decoration: BoxDecoration(
@@ -84,7 +85,7 @@ class _loginScreenState extends State<loginScreen> {
                 )
               ]
           ),
-          height: 60,
+          height: 50,
           child: TextField(
               obscureText: true,
               style: TextStyle(
@@ -96,6 +97,7 @@ class _loginScreenState extends State<loginScreen> {
                   hintText: 'Enter your password',
                   hintStyle: TextStyle(
                     color: Colors.black38,
+                    fontSize: 14.0
                   ),
                   prefixIcon: Icon(
                     Icons.lock,
@@ -113,7 +115,7 @@ class _loginScreenState extends State<loginScreen> {
       child: FlatButton(
         onPressed: ()=>print("Forgot password pressed"),
         padding: EdgeInsets.only(right: 0),
-        child: Text('Forgot Password?', style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold),),
+        child: Text('Forgot Password?', style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold, fontSize: 14.0),),
       ),
     );
   }
@@ -148,14 +150,14 @@ class _loginScreenState extends State<loginScreen> {
   }
   Widget buildLoginBtn(){
     return Container(
-      padding: EdgeInsets.symmetric(vertical: 25, horizontal: 100),
+      padding: EdgeInsets.fromLTRB(100.0, 15.0, 100.0, 10.0),
       width: double.infinity,
       child: RaisedButton(
         elevation: 5,
         onPressed: (){
           Navigator.of(context).pushNamed('/dash');
         },
-        padding: EdgeInsets.all(15),
+        padding: EdgeInsets.symmetric(horizontal: 20.0, vertical: 10.0),
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(15)
         ),
@@ -164,7 +166,7 @@ class _loginScreenState extends State<loginScreen> {
           'LOGIN',
           style: TextStyle(
             color: Colors.blue.shade900,
-            fontSize: 18,
+            fontSize: 16.0,
             fontWeight: FontWeight.bold,
           ),
         ),
@@ -181,7 +183,7 @@ class _loginScreenState extends State<loginScreen> {
         text: 'Need any help? ',
             style: TextStyle(
               color: Colors.white,
-              fontSize: 18,
+              fontSize: 14,
               fontWeight: FontWeight.w500,
             ),
     ),
@@ -189,7 +191,7 @@ class _loginScreenState extends State<loginScreen> {
             text: 'Click here!',
             style: TextStyle(
               color: Colors.white,
-              fontSize: 18,
+              fontSize: 14,
               fontWeight: FontWeight.bold,
             )
           )
@@ -201,67 +203,69 @@ class _loginScreenState extends State<loginScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: AnnotatedRegion<SystemUiOverlayStyle>(
-        value: SystemUiOverlayStyle.light,
-        child: GestureDetector(
-          child: Stack(
-            children: <Widget>[
-              Container(
-                height: double.infinity,
-                width: double.infinity,
-                decoration: BoxDecoration(
-                  gradient: LinearGradient(
-                    begin: Alignment.topCenter,
-                    end: Alignment.bottomCenter,
-                    colors: [
-                      Colors.blue.shade300,
-                      Colors.blue.shade900,
+      body: SafeArea(
+        child: AnnotatedRegion<SystemUiOverlayStyle>(
+          value: SystemUiOverlayStyle.light,
+          child: GestureDetector(
+            child: Stack(
+              children: <Widget>[
+                Container(
+                  height: double.infinity,
+                  width: double.infinity,
+                  decoration: BoxDecoration(
+                    gradient: LinearGradient(
+                      begin: Alignment.topCenter,
+                      end: Alignment.bottomCenter,
+                      colors: [
+                        Colors.blue.shade300,
+                        Colors.blue.shade900,
 
-                      // Colors.blue.shade800,
-                      // Colors.blue.shade800,
-                    ]
-                  )
-                ),
-                 child: SingleChildScrollView(
-                   physics: AlwaysScrollableScrollPhysics(),
-                   padding: EdgeInsets.symmetric(
-                     horizontal: 25,
-                     vertical: 120
+                        // Colors.blue.shade800,
+                        // Colors.blue.shade800,
+                      ]
+                    )
+                  ),
+                   child: SingleChildScrollView(
+                     physics: AlwaysScrollableScrollPhysics(),
+                     padding: EdgeInsets.symmetric(
+                       horizontal: 25,
+                       vertical: 40
+                     ),
+                     child: Column(
+                       mainAxisAlignment: MainAxisAlignment.center,
+                       children: <Widget>[
+                         Column(
+                           children: [
+                             Image.asset("assets/education.png", width: 58.0,),
+                             SizedBox(height: 10.0),
+                             Text("නැණ පියස", style: TextStyle(
+                                 color: Colors.white,
+                                 fontWeight: FontWeight.bold,
+                                 fontSize: 16.0
+                             ),textAlign: TextAlign.center,),
+                           ],
+                         ),
+                         SizedBox(height: 20,),
+                         Text('Log In', style: TextStyle(
+                             color: Colors.white,
+                             fontSize: 30,
+                             fontWeight: FontWeight.bold
+                         ),
+                         ),
+                         SizedBox(height: 50,),
+                         buildEmail(),
+                         SizedBox(height: 20,),
+                         buildPassword(),
+                         buildForgetPasswordButton(),
+                         buildremembercb(),
+                         buildLoginBtn(),
+                         buildSignUpButn(),
+                       ],
+                     ),
                    ),
-                   child: Column(
-                     mainAxisAlignment: MainAxisAlignment.center,
-                     children: <Widget>[
-                       Column(
-                         children: [
-                           Image.asset("assets/education.png", width: 58.0,),
-                           SizedBox(height: 10.0),
-                           Text("නැණ පියස", style: TextStyle(
-                               color: Colors.white,
-                               fontWeight: FontWeight.bold,
-                               fontSize: 17.0
-                           ),textAlign: TextAlign.center,),
-                         ],
-                       ),
-                       SizedBox(height: 20,),
-                       Text('Log In', style: TextStyle(
-                           color: Colors.white,
-                           fontSize: 40,
-                           fontWeight: FontWeight.bold
-                       ),
-                       ),
-                       SizedBox(height: 50,),
-                       buildEmail(),
-                       SizedBox(height: 20,),
-                       buildPassword(),
-                       buildForgetPasswordButton(),
-                       buildremembercb(),
-                       buildLoginBtn(),
-                       buildSignUpButn(),
-                     ],
-                   ),
-                 ),
-                ),
-            ],
+                  ),
+              ],
+            ),
           ),
         ),
       ),

@@ -7,6 +7,7 @@ import 'login.dart';
 import 'myProfile.dart';
 import 'notice_board.dart';
 import 'subject_management.dart';
+import 'user_management.dart';
 
 void main() {
   runApp(const MyApp());
@@ -33,7 +34,7 @@ class MyApp extends StatelessWidget {
         '/submgt' : (context)=>SubMgt(),
         '/noticeb' : (context)=>NoticeB(),
         '/addnewsub' : (context)=>AddNewSub(),
-
+        '/usermgt' : (context)=>UserMgt(),
       },
     );
   }
