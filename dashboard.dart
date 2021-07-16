@@ -200,7 +200,7 @@ class Dashboard extends StatelessWidget {
                               ),
                             ),
                           ),
-                          onPressed: (){Navigator.of(context).pushNamed('/submgt');},
+                          onPressed: (){ Navigator.of(context).pushNamed('/submgt');},
                         ),
 
                         ElevatedButton(
