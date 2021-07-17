@@ -48,7 +48,7 @@ class _UserMgtState extends State<UserMgt> {
             "User Management".toUpperCase(),
             style: TextStyle(
                 color: Colors.white,
-                fontSize: 21.0,
+                fontSize: 18.0,
                 fontWeight: FontWeight.bold
             ),
           ),

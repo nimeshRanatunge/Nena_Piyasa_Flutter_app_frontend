@@ -18,17 +18,16 @@ class _SubMgtState extends State<SubMgt> {
       appBar: AppBar(
         backgroundColor: Colors.blue.shade800,
         title:
-          Padding(
-            padding: const EdgeInsets.all(18.0),
-            child: Text(
-              "Subject Management".toUpperCase(),
-              style: TextStyle(
-                  color: Colors.white,
-                  fontSize: 21.0,
-                  fontWeight: FontWeight.bold
-              ),
+              Center(
+                child: Text(
+                "Subject Management".toUpperCase(),
+                style: TextStyle(
+                    color: Colors.white,
+                    fontSize: 21.0,
+                    fontWeight: FontWeight.bold
+                ),
         ),
-          ),
+              ),
       ),
       body: SafeArea(
 
