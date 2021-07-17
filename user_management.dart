@@ -27,7 +27,7 @@ class _UserMgtState extends State<UserMgt> {
           'Add a user',
           style: TextStyle(
             color: Colors.blue.shade900,
-            fontSize: 18,
+            fontSize: 16,
             fontWeight: FontWeight.bold,
           ),
         ),
@@ -114,7 +114,6 @@ class _UserMgtState extends State<UserMgt> {
                 ),
 
                 buildLoginBtn(),
-
                 Column(
                   children: [
                     Padding(
@@ -124,7 +123,7 @@ class _UserMgtState extends State<UserMgt> {
                           "ADMINS",
                           style: TextStyle(
                             color: Colors.white,
-                            fontSize: 20.0,
+                            fontSize: 18.0,
                             fontWeight: FontWeight.bold,
                           ),
                         ),
@@ -138,23 +137,23 @@ class _UserMgtState extends State<UserMgt> {
                           padding: const EdgeInsets.fromLTRB(10.0, 15.0, 5.0, 15.0),
                           child: Center(
                             child: Text(
-                              "KCD Silva",
+                              "KCD SILVA",
                               style: TextStyle(
-                                  color: Colors.black,
-                                  fontSize: 14.0,
-                                  fontWeight: FontWeight.bold
+                                color: Colors.black,
+                                fontSize: 12.0,
+                                //fontWeight: FontWeight.bold
                               ),
                             ),
                           ),
                         ),
                         Padding(
-                          padding: const EdgeInsets.only(right: 20.0),
+                          padding: const EdgeInsets.only(right: 5.0),
                           child: Row(
                             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                             children: [
                               TextButton(
                                 onPressed: (){},
-                                child: Text("View".toUpperCase(), style: TextStyle(fontSize: 10, color: Colors.black, fontWeight: FontWeight.bold),),
+                                child: Text("View".toUpperCase(), style: TextStyle(fontSize: 10, color: Colors.black,),),
                                 style: ButtonStyle(
                                     padding: MaterialStateProperty.all<EdgeInsets>(EdgeInsets.symmetric(horizontal: 15.0, vertical: 10.0)),
                                     foregroundColor: MaterialStateProperty.all<Color>(Colors.red),
@@ -170,7 +169,7 @@ class _UserMgtState extends State<UserMgt> {
                               SizedBox(width: 5,),
                               TextButton(
                                 onPressed: (){},
-                                child: Text("Edit".toUpperCase(), style: TextStyle(fontSize: 10, color: Colors.black, fontWeight: FontWeight.bold),),
+                                child: Text("Edit".toUpperCase(), style: TextStyle(fontSize: 10, color: Colors.black,),),
                                 style: ButtonStyle(
                                     padding: MaterialStateProperty.all<EdgeInsets>(EdgeInsets.symmetric(horizontal: 15.0, vertical: 10.0)),
                                     foregroundColor: MaterialStateProperty.all<Color>(Colors.red),
@@ -212,23 +211,23 @@ class _UserMgtState extends State<UserMgt> {
                           padding: const EdgeInsets.fromLTRB(10.0, 15.0, 5.0, 15.0),
                           child: Center(
                             child: Text(
-                              "HANT Ranatunge",
+                              "HANT RANATUNGE",
                               style: TextStyle(
-                                  color: Colors.black,
-                                  fontSize: 14.0,
-                                  fontWeight: FontWeight.bold
+                                color: Colors.black,
+                                fontSize: 12.0,
+                                //fontWeight: FontWeight.bold
                               ),
                             ),
                           ),
                         ),
                         Padding(
-                          padding: const EdgeInsets.only(right: 20.0),
+                          padding: const EdgeInsets.only(right: 5.0),
                           child: Row(
                             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                             children: [
                               TextButton(
                                 onPressed: (){},
-                                child: Text("View".toUpperCase(), style: TextStyle(fontSize: 10, color: Colors.black, fontWeight: FontWeight.bold),),
+                                child: Text("View".toUpperCase(), style: TextStyle(fontSize: 10, color: Colors.black,),),
                                 style: ButtonStyle(
                                     padding: MaterialStateProperty.all<EdgeInsets>(EdgeInsets.symmetric(horizontal: 15.0, vertical: 10.0)),
                                     foregroundColor: MaterialStateProperty.all<Color>(Colors.red),
@@ -244,7 +243,81 @@ class _UserMgtState extends State<UserMgt> {
                               SizedBox(width: 5,),
                               TextButton(
                                 onPressed: (){},
-                                child: Text("Edit".toUpperCase(), style: TextStyle(fontSize: 10, color: Colors.black, fontWeight: FontWeight.bold),),
+                                child: Text("Edit".toUpperCase(), style: TextStyle(fontSize: 10, color: Colors.black,),),
+                                style: ButtonStyle(
+                                    padding: MaterialStateProperty.all<EdgeInsets>(EdgeInsets.symmetric(horizontal: 15.0, vertical: 10.0)),
+                                    foregroundColor: MaterialStateProperty.all<Color>(Colors.red),
+                                    backgroundColor: MaterialStateProperty.all<Color>(Colors.grey.shade300),
+                                    shape: MaterialStateProperty.all<RoundedRectangleBorder>(
+                                        RoundedRectangleBorder(
+                                          borderRadius: BorderRadius.circular(18.0),
+                                          side: BorderSide(color: Colors.white),
+                                        )
+                                    )
+                                ),
+                              ),
+                              SizedBox(width: 5,),
+                              ElevatedButton(
+                                onPressed: (){},
+                                child: Text("DELETE".toUpperCase(), style: TextStyle(fontSize: 10),),
+                                style: ButtonStyle(
+                                    padding: MaterialStateProperty.all<EdgeInsets>(EdgeInsets.symmetric(horizontal: 15.0, vertical: 10.0)),
+                                    foregroundColor: MaterialStateProperty.all<Color>(Colors.black),
+                                    backgroundColor: MaterialStateProperty.all<Color>(Colors.grey.shade300),
+                                    shape: MaterialStateProperty.all<RoundedRectangleBorder>(
+                                        RoundedRectangleBorder(
+                                            borderRadius: BorderRadius.circular(18.0),
+                                            side: BorderSide(color: Colors.white)
+                                        )
+                                    )
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
+                      ],
+                    ),
+
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        Padding(
+                          padding: const EdgeInsets.fromLTRB(10.0, 15.0, 5.0, 15.0),
+                          child: Center(
+                            child: Text(
+                              "WP ANANDA",
+                              style: TextStyle(
+                                color: Colors.black,
+                                fontSize: 12.0,
+                                //fontWeight: FontWeight.bold
+                              ),
+                            ),
+                          ),
+                        ),
+                        Padding(
+                          padding: const EdgeInsets.only(right: 5.0),
+                          child: Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                            children: [
+                              TextButton(
+                                onPressed: (){},
+                                child: Text("View".toUpperCase(), style: TextStyle(fontSize: 10, color: Colors.black,),),
+                                style: ButtonStyle(
+                                    padding: MaterialStateProperty.all<EdgeInsets>(EdgeInsets.symmetric(horizontal: 15.0, vertical: 10.0)),
+                                    foregroundColor: MaterialStateProperty.all<Color>(Colors.red),
+                                    backgroundColor: MaterialStateProperty.all<Color>(Colors.grey.shade300),
+                                    shape: MaterialStateProperty.all<RoundedRectangleBorder>(
+                                        RoundedRectangleBorder(
+                                          borderRadius: BorderRadius.circular(18.0),
+                                          side: BorderSide(color: Colors.white),
+                                        )
+                                    )
+                                ),
+                              ),
+                              SizedBox(width: 5,),
+                              TextButton(
+                                onPressed: (){},
+                                child: Text("Edit".toUpperCase(), style: TextStyle(fontSize: 10, color: Colors.black,),),
                                 style: ButtonStyle(
                                     padding: MaterialStateProperty.all<EdgeInsets>(EdgeInsets.symmetric(horizontal: 15.0, vertical: 10.0)),
                                     foregroundColor: MaterialStateProperty.all<Color>(Colors.red),
@@ -289,7 +362,7 @@ class _UserMgtState extends State<UserMgt> {
                           "PRINCIPALS",
                           style: TextStyle(
                             color: Colors.white,
-                            fontSize: 20.0,
+                            fontSize: 18.0,
                             fontWeight: FontWeight.bold,
                           ),
                         ),
@@ -303,23 +376,23 @@ class _UserMgtState extends State<UserMgt> {
                           padding: const EdgeInsets.fromLTRB(10.0, 15.0, 5.0, 15.0),
                           child: Center(
                             child: Text(
-                              "Compulsoryxxxxxx",
+                              "OAJW KUMARI",
                               style: TextStyle(
                                   color: Colors.black,
-                                  fontSize: 14.0,
-                                  fontWeight: FontWeight.bold,
+                                  fontSize: 12.0,
+                                  //fontWeight: FontWeight.bold
                               ),
                             ),
                           ),
                         ),
                         Padding(
-                          padding: const EdgeInsets.only(right: 20.0),
+                          padding: const EdgeInsets.only(right: 5.0),
                           child: Row(
                             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                             children: [
                               TextButton(
                                 onPressed: (){},
-                                child: Text("View".toUpperCase(), style: TextStyle(fontSize: 10, color: Colors.black, fontWeight: FontWeight.bold),),
+                                child: Text("View".toUpperCase(), style: TextStyle(fontSize: 10, color: Colors.black,),),
                                 style: ButtonStyle(
                                     padding: MaterialStateProperty.all<EdgeInsets>(EdgeInsets.symmetric(horizontal: 15.0, vertical: 10.0)),
                                     foregroundColor: MaterialStateProperty.all<Color>(Colors.red),
@@ -335,7 +408,7 @@ class _UserMgtState extends State<UserMgt> {
                               SizedBox(width: 5,),
                               TextButton(
                                 onPressed: (){},
-                                child: Text("Edit".toUpperCase(), style: TextStyle(fontSize: 10, color: Colors.black, fontWeight: FontWeight.bold),),
+                                child: Text("Edit".toUpperCase(), style: TextStyle(fontSize: 10, color: Colors.black,),),
                                 style: ButtonStyle(
                                     padding: MaterialStateProperty.all<EdgeInsets>(EdgeInsets.symmetric(horizontal: 15.0, vertical: 10.0)),
                                     foregroundColor: MaterialStateProperty.all<Color>(Colors.red),
@@ -377,23 +450,23 @@ class _UserMgtState extends State<UserMgt> {
                           padding: const EdgeInsets.fromLTRB(10.0, 15.0, 5.0, 15.0),
                           child: Center(
                             child: Text(
-                              "Compulsory",
+                              "PPS PRASANTHIKA",
                               style: TextStyle(
                                   color: Colors.black,
-                                  fontSize: 14.0,
-                                  fontWeight: FontWeight.bold
+                                  fontSize: 12.0,
+                                  //fontWeight: FontWeight.bold
                               ),
                             ),
                           ),
                         ),
                         Padding(
-                          padding: const EdgeInsets.only(right: 20.0),
+                          padding: const EdgeInsets.only(right: 5.0),
                           child: Row(
                             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                             children: [
                               TextButton(
                                 onPressed: (){},
-                                child: Text("View".toUpperCase(), style: TextStyle(fontSize: 10, color: Colors.black, fontWeight: FontWeight.bold),),
+                                child: Text("View".toUpperCase(), style: TextStyle(fontSize: 10, color: Colors.black,),),
                                 style: ButtonStyle(
                                     padding: MaterialStateProperty.all<EdgeInsets>(EdgeInsets.symmetric(horizontal: 15.0, vertical: 10.0)),
                                     foregroundColor: MaterialStateProperty.all<Color>(Colors.red),
@@ -409,247 +482,7 @@ class _UserMgtState extends State<UserMgt> {
                               SizedBox(width: 5,),
                               TextButton(
                                 onPressed: (){},
-                                child: Text("Edit".toUpperCase(), style: TextStyle(fontSize: 10, color: Colors.black, fontWeight: FontWeight.bold),),
-                                style: ButtonStyle(
-                                    padding: MaterialStateProperty.all<EdgeInsets>(EdgeInsets.symmetric(horizontal: 15.0, vertical: 10.0)),
-                                    foregroundColor: MaterialStateProperty.all<Color>(Colors.red),
-                                    backgroundColor: MaterialStateProperty.all<Color>(Colors.grey.shade300),
-                                    shape: MaterialStateProperty.all<RoundedRectangleBorder>(
-                                        RoundedRectangleBorder(
-                                          borderRadius: BorderRadius.circular(18.0),
-                                          side: BorderSide(color: Colors.white),
-                                        )
-                                    )
-                                ),
-                              ),
-                              SizedBox(width: 5,),
-                              ElevatedButton(
-                                onPressed: (){},
-                                child: Text("DELETE".toUpperCase(), style: TextStyle(fontSize: 10),),
-                                style: ButtonStyle(
-                                    padding: MaterialStateProperty.all<EdgeInsets>(EdgeInsets.symmetric(horizontal: 15.0, vertical: 10.0)),
-                                    foregroundColor: MaterialStateProperty.all<Color>(Colors.black),
-                                    backgroundColor: MaterialStateProperty.all<Color>(Colors.grey.shade300),
-                                    shape: MaterialStateProperty.all<RoundedRectangleBorder>(
-                                        RoundedRectangleBorder(
-                                            borderRadius: BorderRadius.circular(18.0),
-                                            side: BorderSide(color: Colors.white)
-                                        )
-                                    )
-                                ),
-                              ),
-                            ],
-                          ),
-                        ),
-                      ],
-                    ),
-
-                  ],
-                ),
-                Column(
-                  children: [
-                    Padding(
-                      padding: const EdgeInsets.fromLTRB(22.0, 20.0, 22.0, 22.0),
-                      child: Center(
-                        child: Text(
-                          "ADMINS",
-                          style: TextStyle(
-                            color: Colors.white,
-                            fontSize: 20.0,
-                            fontWeight: FontWeight.bold,
-                          ),
-                        ),
-                      ),
-                    ),
-
-                    Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      children: [
-                        Padding(
-                          padding: const EdgeInsets.fromLTRB(10.0, 15.0, 5.0, 15.0),
-                          child: Center(
-                            child: Text(
-                              "Compulsory",
-                              style: TextStyle(
-                                  color: Colors.black,
-                                  fontSize: 14.0,
-                                  fontWeight: FontWeight.bold
-                              ),
-                            ),
-                          ),
-                        ),
-                        Padding(
-                          padding: const EdgeInsets.only(right: 20.0),
-                          child: Row(
-                            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                            children: [
-                              TextButton(
-                                onPressed: (){},
-                                child: Text("View".toUpperCase(), style: TextStyle(fontSize: 10, color: Colors.black, fontWeight: FontWeight.bold),),
-                                style: ButtonStyle(
-                                    padding: MaterialStateProperty.all<EdgeInsets>(EdgeInsets.symmetric(horizontal: 15.0, vertical: 10.0)),
-                                    foregroundColor: MaterialStateProperty.all<Color>(Colors.red),
-                                    backgroundColor: MaterialStateProperty.all<Color>(Colors.grey.shade300),
-                                    shape: MaterialStateProperty.all<RoundedRectangleBorder>(
-                                        RoundedRectangleBorder(
-                                          borderRadius: BorderRadius.circular(18.0),
-                                          side: BorderSide(color: Colors.white),
-                                        )
-                                    )
-                                ),
-                              ),
-                              SizedBox(width: 5,),
-                              TextButton(
-                                onPressed: (){},
-                                child: Text("Edit".toUpperCase(), style: TextStyle(fontSize: 10, color: Colors.black, fontWeight: FontWeight.bold),),
-                                style: ButtonStyle(
-                                    padding: MaterialStateProperty.all<EdgeInsets>(EdgeInsets.symmetric(horizontal: 15.0, vertical: 10.0)),
-                                    foregroundColor: MaterialStateProperty.all<Color>(Colors.red),
-                                    backgroundColor: MaterialStateProperty.all<Color>(Colors.grey.shade300),
-                                    shape: MaterialStateProperty.all<RoundedRectangleBorder>(
-                                        RoundedRectangleBorder(
-                                          borderRadius: BorderRadius.circular(18.0),
-                                          side: BorderSide(color: Colors.white),
-                                        )
-                                    )
-                                ),
-                              ),
-                              SizedBox(width: 5,),
-                              ElevatedButton(
-                                onPressed: (){},
-                                child: Text("DELETE".toUpperCase(), style: TextStyle(fontSize: 10),),
-                                style: ButtonStyle(
-                                    padding: MaterialStateProperty.all<EdgeInsets>(EdgeInsets.symmetric(horizontal: 15.0, vertical: 10.0)),
-                                    foregroundColor: MaterialStateProperty.all<Color>(Colors.black),
-                                    backgroundColor: MaterialStateProperty.all<Color>(Colors.grey.shade300),
-                                    shape: MaterialStateProperty.all<RoundedRectangleBorder>(
-                                        RoundedRectangleBorder(
-                                            borderRadius: BorderRadius.circular(18.0),
-                                            side: BorderSide(color: Colors.white)
-                                        )
-                                    )
-                                ),
-                              ),
-                            ],
-                          ),
-                        ),
-                      ],
-                    ),
-
-                    Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      children: [
-                        Padding(
-                          padding: const EdgeInsets.fromLTRB(10.0, 15.0, 5.0, 15.0),
-                          child: Center(
-                            child: Text(
-                              "Compulsory",
-                              style: TextStyle(
-                                  color: Colors.black,
-                                  fontSize: 14.0,
-                                  fontWeight: FontWeight.bold
-                              ),
-                            ),
-                          ),
-                        ),
-                        Padding(
-                          padding: const EdgeInsets.only(right: 20.0),
-                          child: Row(
-                            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                            children: [
-                              TextButton(
-                                onPressed: (){},
-                                child: Text("View".toUpperCase(), style: TextStyle(fontSize: 10, color: Colors.black, fontWeight: FontWeight.bold),),
-                                style: ButtonStyle(
-                                    padding: MaterialStateProperty.all<EdgeInsets>(EdgeInsets.symmetric(horizontal: 15.0, vertical: 10.0)),
-                                    foregroundColor: MaterialStateProperty.all<Color>(Colors.red),
-                                    backgroundColor: MaterialStateProperty.all<Color>(Colors.grey.shade300),
-                                    shape: MaterialStateProperty.all<RoundedRectangleBorder>(
-                                        RoundedRectangleBorder(
-                                          borderRadius: BorderRadius.circular(18.0),
-                                          side: BorderSide(color: Colors.white),
-                                        )
-                                    )
-                                ),
-                              ),
-                              SizedBox(width: 5,),
-                              TextButton(
-                                onPressed: (){},
-                                child: Text("Edit".toUpperCase(), style: TextStyle(fontSize: 10, color: Colors.black, fontWeight: FontWeight.bold),),
-                                style: ButtonStyle(
-                                    padding: MaterialStateProperty.all<EdgeInsets>(EdgeInsets.symmetric(horizontal: 15.0, vertical: 10.0)),
-                                    foregroundColor: MaterialStateProperty.all<Color>(Colors.red),
-                                    backgroundColor: MaterialStateProperty.all<Color>(Colors.grey.shade300),
-                                    shape: MaterialStateProperty.all<RoundedRectangleBorder>(
-                                        RoundedRectangleBorder(
-                                          borderRadius: BorderRadius.circular(18.0),
-                                          side: BorderSide(color: Colors.white),
-                                        )
-                                    )
-                                ),
-                              ),
-                              SizedBox(width: 5,),
-                              ElevatedButton(
-                                onPressed: (){},
-                                child: Text("DELETE".toUpperCase(), style: TextStyle(fontSize: 10),),
-                                style: ButtonStyle(
-                                    padding: MaterialStateProperty.all<EdgeInsets>(EdgeInsets.symmetric(horizontal: 15.0, vertical: 10.0)),
-                                    foregroundColor: MaterialStateProperty.all<Color>(Colors.black),
-                                    backgroundColor: MaterialStateProperty.all<Color>(Colors.grey.shade300),
-                                    shape: MaterialStateProperty.all<RoundedRectangleBorder>(
-                                        RoundedRectangleBorder(
-                                            borderRadius: BorderRadius.circular(18.0),
-                                            side: BorderSide(color: Colors.white)
-                                        )
-                                    )
-                                ),
-                              ),
-                            ],
-                          ),
-                        ),
-                      ],
-                    ),
-
-                    Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      children: [
-                        Padding(
-                          padding: const EdgeInsets.fromLTRB(10.0, 15.0, 5.0, 15.0),
-                          child: Center(
-                            child: Text(
-                              "Compulsory",
-                              style: TextStyle(
-                                  color: Colors.black,
-                                  fontSize: 14.0,
-                                  fontWeight: FontWeight.bold
-                              ),
-                            ),
-                          ),
-                        ),
-                        Padding(
-                          padding: const EdgeInsets.only(right: 20.0),
-                          child: Row(
-                            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                            children: [
-                              TextButton(
-                                onPressed: (){},
-                                child: Text("View".toUpperCase(), style: TextStyle(fontSize: 10, color: Colors.black, fontWeight: FontWeight.bold),),
-                                style: ButtonStyle(
-                                    padding: MaterialStateProperty.all<EdgeInsets>(EdgeInsets.symmetric(horizontal: 15.0, vertical: 10.0)),
-                                    foregroundColor: MaterialStateProperty.all<Color>(Colors.red),
-                                    backgroundColor: MaterialStateProperty.all<Color>(Colors.grey.shade300),
-                                    shape: MaterialStateProperty.all<RoundedRectangleBorder>(
-                                        RoundedRectangleBorder(
-                                          borderRadius: BorderRadius.circular(18.0),
-                                          side: BorderSide(color: Colors.white),
-                                        )
-                                    )
-                                ),
-                              ),
-                              SizedBox(width: 5,),
-                              TextButton(
-                                onPressed: (){},
-                                child: Text("Edit".toUpperCase(), style: TextStyle(fontSize: 10, color: Colors.black, fontWeight: FontWeight.bold),),
+                                child: Text("Edit".toUpperCase(), style: TextStyle(fontSize: 10, color: Colors.black,),),
                                 style: ButtonStyle(
                                     padding: MaterialStateProperty.all<EdgeInsets>(EdgeInsets.symmetric(horizontal: 15.0, vertical: 10.0)),
                                     foregroundColor: MaterialStateProperty.all<Color>(Colors.red),
@@ -691,10 +524,10 @@ class _UserMgtState extends State<UserMgt> {
                       padding: const EdgeInsets.fromLTRB(22.0, 20.0, 22.0, 22.0),
                       child: Center(
                         child: Text(
-                          "ADMINS",
+                          "SECTION HEADS",
                           style: TextStyle(
                             color: Colors.white,
-                            fontSize: 20.0,
+                            fontSize: 18.0,
                             fontWeight: FontWeight.bold,
                           ),
                         ),
@@ -708,23 +541,23 @@ class _UserMgtState extends State<UserMgt> {
                           padding: const EdgeInsets.fromLTRB(10.0, 15.0, 5.0, 15.0),
                           child: Center(
                             child: Text(
-                              "Compulsory",
+                              "IP MUDALIGE",
                               style: TextStyle(
-                                  color: Colors.black,
-                                  fontSize: 14.0,
-                                  fontWeight: FontWeight.bold
+                                color: Colors.black,
+                                fontSize: 12.0,
+                                //fontWeight: FontWeight.bold
                               ),
                             ),
                           ),
                         ),
                         Padding(
-                          padding: const EdgeInsets.only(right: 20.0),
+                          padding: const EdgeInsets.only(right: 5.0),
                           child: Row(
                             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                             children: [
                               TextButton(
                                 onPressed: (){},
-                                child: Text("View".toUpperCase(), style: TextStyle(fontSize: 10, color: Colors.black, fontWeight: FontWeight.bold),),
+                                child: Text("View".toUpperCase(), style: TextStyle(fontSize: 10, color: Colors.black,),),
                                 style: ButtonStyle(
                                     padding: MaterialStateProperty.all<EdgeInsets>(EdgeInsets.symmetric(horizontal: 15.0, vertical: 10.0)),
                                     foregroundColor: MaterialStateProperty.all<Color>(Colors.red),
@@ -740,7 +573,7 @@ class _UserMgtState extends State<UserMgt> {
                               SizedBox(width: 5,),
                               TextButton(
                                 onPressed: (){},
-                                child: Text("Edit".toUpperCase(), style: TextStyle(fontSize: 10, color: Colors.black, fontWeight: FontWeight.bold),),
+                                child: Text("Edit".toUpperCase(), style: TextStyle(fontSize: 10, color: Colors.black,),),
                                 style: ButtonStyle(
                                     padding: MaterialStateProperty.all<EdgeInsets>(EdgeInsets.symmetric(horizontal: 15.0, vertical: 10.0)),
                                     foregroundColor: MaterialStateProperty.all<Color>(Colors.red),
@@ -782,23 +615,23 @@ class _UserMgtState extends State<UserMgt> {
                           padding: const EdgeInsets.fromLTRB(10.0, 15.0, 5.0, 15.0),
                           child: Center(
                             child: Text(
-                              "Compulsory",
+                              "GW KALANSOORIYA",
                               style: TextStyle(
-                                  color: Colors.black,
-                                  fontSize: 14.0,
-                                  fontWeight: FontWeight.bold
+                                color: Colors.black,
+                                fontSize: 12.0,
+                                //fontWeight: FontWeight.bold
                               ),
                             ),
                           ),
                         ),
                         Padding(
-                          padding: const EdgeInsets.only(right: 20.0),
+                          padding: const EdgeInsets.only(right: 5.0),
                           child: Row(
                             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                             children: [
                               TextButton(
                                 onPressed: (){},
-                                child: Text("View".toUpperCase(), style: TextStyle(fontSize: 10, color: Colors.black, fontWeight: FontWeight.bold),),
+                                child: Text("View".toUpperCase(), style: TextStyle(fontSize: 10, color: Colors.black,),),
                                 style: ButtonStyle(
                                     padding: MaterialStateProperty.all<EdgeInsets>(EdgeInsets.symmetric(horizontal: 15.0, vertical: 10.0)),
                                     foregroundColor: MaterialStateProperty.all<Color>(Colors.red),
@@ -814,81 +647,7 @@ class _UserMgtState extends State<UserMgt> {
                               SizedBox(width: 5,),
                               TextButton(
                                 onPressed: (){},
-                                child: Text("Edit".toUpperCase(), style: TextStyle(fontSize: 10, color: Colors.black, fontWeight: FontWeight.bold),),
-                                style: ButtonStyle(
-                                    padding: MaterialStateProperty.all<EdgeInsets>(EdgeInsets.symmetric(horizontal: 15.0, vertical: 10.0)),
-                                    foregroundColor: MaterialStateProperty.all<Color>(Colors.red),
-                                    backgroundColor: MaterialStateProperty.all<Color>(Colors.grey.shade300),
-                                    shape: MaterialStateProperty.all<RoundedRectangleBorder>(
-                                        RoundedRectangleBorder(
-                                          borderRadius: BorderRadius.circular(18.0),
-                                          side: BorderSide(color: Colors.white),
-                                        )
-                                    )
-                                ),
-                              ),
-                              SizedBox(width: 5,),
-                              ElevatedButton(
-                                onPressed: (){},
-                                child: Text("DELETE".toUpperCase(), style: TextStyle(fontSize: 10),),
-                                style: ButtonStyle(
-                                    padding: MaterialStateProperty.all<EdgeInsets>(EdgeInsets.symmetric(horizontal: 15.0, vertical: 10.0)),
-                                    foregroundColor: MaterialStateProperty.all<Color>(Colors.black),
-                                    backgroundColor: MaterialStateProperty.all<Color>(Colors.grey.shade300),
-                                    shape: MaterialStateProperty.all<RoundedRectangleBorder>(
-                                        RoundedRectangleBorder(
-                                            borderRadius: BorderRadius.circular(18.0),
-                                            side: BorderSide(color: Colors.white)
-                                        )
-                                    )
-                                ),
-                              ),
-                            ],
-                          ),
-                        ),
-                      ],
-                    ),
-
-                    Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      children: [
-                        Padding(
-                          padding: const EdgeInsets.fromLTRB(10.0, 15.0, 5.0, 15.0),
-                          child: Center(
-                            child: Text(
-                              "Compulsory",
-                              style: TextStyle(
-                                  color: Colors.black,
-                                  fontSize: 14.0,
-                                  fontWeight: FontWeight.bold
-                              ),
-                            ),
-                          ),
-                        ),
-                        Padding(
-                          padding: const EdgeInsets.only(right: 20.0),
-                          child: Row(
-                            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                            children: [
-                              TextButton(
-                                onPressed: (){},
-                                child: Text("View".toUpperCase(), style: TextStyle(fontSize: 10, color: Colors.black, fontWeight: FontWeight.bold),),
-                                style: ButtonStyle(
-                                    padding: MaterialStateProperty.all<EdgeInsets>(EdgeInsets.symmetric(horizontal: 15.0, vertical: 10.0)),
-                                    foregroundColor: MaterialStateProperty.all<Color>(Colors.red),
-                                    backgroundColor: MaterialStateProperty.all<Color>(Colors.grey.shade300),
-                                    shape: MaterialStateProperty.all<RoundedRectangleBorder>(
-                                        RoundedRectangleBorder(
-                                          borderRadius: BorderRadius.circular(18.0),
-                                          side: BorderSide(color: Colors.white),
-                                        )
-                                    )
-                                ),
-                              ),
-                              SizedBox(width: 5,),
-                              TextButton(
-                                onPressed: (){},
-                                child: Text("Edit".toUpperCase(), style: TextStyle(fontSize: 10, color: Colors.black, fontWeight: FontWeight.bold),),
+                                child: Text("Edit".toUpperCase(), style: TextStyle(fontSize: 10, color: Colors.black,),),
                                 style: ButtonStyle(
                                     padding: MaterialStateProperty.all<EdgeInsets>(EdgeInsets.symmetric(horizontal: 15.0, vertical: 10.0)),
                                     foregroundColor: MaterialStateProperty.all<Color>(Colors.red),
@@ -924,245 +683,8 @@ class _UserMgtState extends State<UserMgt> {
                     ),
                   ],
                 ),
-                Column(
-                  children: [
-                    Padding(
-                      padding: const EdgeInsets.fromLTRB(22.0, 20.0, 22.0, 22.0),
-                      child: Center(
-                        child: Text(
-                          "ADMINS",
-                          style: TextStyle(
-                            color: Colors.white,
-                            fontSize: 20.0,
-                            fontWeight: FontWeight.bold,
-                          ),
-                        ),
-                      ),
-                    ),
 
-                    Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      children: [
-                        Padding(
-                          padding: const EdgeInsets.fromLTRB(10.0, 15.0, 5.0, 15.0),
-                          child: Center(
-                            child: Text(
-                              "Compulsory",
-                              style: TextStyle(
-                                  color: Colors.black,
-                                  fontSize: 14.0,
-                                  fontWeight: FontWeight.bold
-                              ),
-                            ),
-                          ),
-                        ),
-                        Padding(
-                          padding: const EdgeInsets.only(right: 20.0),
-                          child: Row(
-                            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                            children: [
-                              TextButton(
-                                onPressed: (){},
-                                child: Text("View".toUpperCase(), style: TextStyle(fontSize: 10, color: Colors.black, fontWeight: FontWeight.bold),),
-                                style: ButtonStyle(
-                                    padding: MaterialStateProperty.all<EdgeInsets>(EdgeInsets.symmetric(horizontal: 15.0, vertical: 10.0)),
-                                    foregroundColor: MaterialStateProperty.all<Color>(Colors.red),
-                                    backgroundColor: MaterialStateProperty.all<Color>(Colors.grey.shade300),
-                                    shape: MaterialStateProperty.all<RoundedRectangleBorder>(
-                                        RoundedRectangleBorder(
-                                          borderRadius: BorderRadius.circular(18.0),
-                                          side: BorderSide(color: Colors.white),
-                                        )
-                                    )
-                                ),
-                              ),
-                              SizedBox(width: 5,),
-                              TextButton(
-                                onPressed: (){},
-                                child: Text("Edit".toUpperCase(), style: TextStyle(fontSize: 10, color: Colors.black, fontWeight: FontWeight.bold),),
-                                style: ButtonStyle(
-                                    padding: MaterialStateProperty.all<EdgeInsets>(EdgeInsets.symmetric(horizontal: 15.0, vertical: 10.0)),
-                                    foregroundColor: MaterialStateProperty.all<Color>(Colors.red),
-                                    backgroundColor: MaterialStateProperty.all<Color>(Colors.grey.shade300),
-                                    shape: MaterialStateProperty.all<RoundedRectangleBorder>(
-                                        RoundedRectangleBorder(
-                                          borderRadius: BorderRadius.circular(18.0),
-                                          side: BorderSide(color: Colors.white),
-                                        )
-                                    )
-                                ),
-                              ),
-                              SizedBox(width: 5,),
-                              ElevatedButton(
-                                onPressed: (){},
-                                child: Text("DELETE".toUpperCase(), style: TextStyle(fontSize: 10),),
-                                style: ButtonStyle(
-                                    padding: MaterialStateProperty.all<EdgeInsets>(EdgeInsets.symmetric(horizontal: 15.0, vertical: 10.0)),
-                                    foregroundColor: MaterialStateProperty.all<Color>(Colors.black),
-                                    backgroundColor: MaterialStateProperty.all<Color>(Colors.grey.shade300),
-                                    shape: MaterialStateProperty.all<RoundedRectangleBorder>(
-                                        RoundedRectangleBorder(
-                                            borderRadius: BorderRadius.circular(18.0),
-                                            side: BorderSide(color: Colors.white)
-                                        )
-                                    )
-                                ),
-                              ),
-                            ],
-                          ),
-                        ),
-                      ],
-                    ),
 
-                    Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      children: [
-                        Padding(
-                          padding: const EdgeInsets.fromLTRB(10.0, 15.0, 5.0, 15.0),
-                          child: Center(
-                            child: Text(
-                              "Compulsory",
-                              style: TextStyle(
-                                  color: Colors.black,
-                                  fontSize: 14.0,
-                                  fontWeight: FontWeight.bold
-                              ),
-                            ),
-                          ),
-                        ),
-                        Padding(
-                          padding: const EdgeInsets.only(right: 20.0),
-                          child: Row(
-                            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                            children: [
-                              TextButton(
-                                onPressed: (){},
-                                child: Text("View".toUpperCase(), style: TextStyle(fontSize: 10, color: Colors.black, fontWeight: FontWeight.bold),),
-                                style: ButtonStyle(
-                                    padding: MaterialStateProperty.all<EdgeInsets>(EdgeInsets.symmetric(horizontal: 15.0, vertical: 10.0)),
-                                    foregroundColor: MaterialStateProperty.all<Color>(Colors.red),
-                                    backgroundColor: MaterialStateProperty.all<Color>(Colors.grey.shade300),
-                                    shape: MaterialStateProperty.all<RoundedRectangleBorder>(
-                                        RoundedRectangleBorder(
-                                          borderRadius: BorderRadius.circular(18.0),
-                                          side: BorderSide(color: Colors.white),
-                                        )
-                                    )
-                                ),
-                              ),
-                              SizedBox(width: 5,),
-                              TextButton(
-                                onPressed: (){},
-                                child: Text("Edit".toUpperCase(), style: TextStyle(fontSize: 10, color: Colors.black, fontWeight: FontWeight.bold),),
-                                style: ButtonStyle(
-                                    padding: MaterialStateProperty.all<EdgeInsets>(EdgeInsets.symmetric(horizontal: 15.0, vertical: 10.0)),
-                                    foregroundColor: MaterialStateProperty.all<Color>(Colors.red),
-                                    backgroundColor: MaterialStateProperty.all<Color>(Colors.grey.shade300),
-                                    shape: MaterialStateProperty.all<RoundedRectangleBorder>(
-                                        RoundedRectangleBorder(
-                                          borderRadius: BorderRadius.circular(18.0),
-                                          side: BorderSide(color: Colors.white),
-                                        )
-                                    )
-                                ),
-                              ),
-                              SizedBox(width: 5,),
-                              ElevatedButton(
-                                onPressed: (){},
-                                child: Text("DELETE".toUpperCase(), style: TextStyle(fontSize: 10),),
-                                style: ButtonStyle(
-                                    padding: MaterialStateProperty.all<EdgeInsets>(EdgeInsets.symmetric(horizontal: 15.0, vertical: 10.0)),
-                                    foregroundColor: MaterialStateProperty.all<Color>(Colors.black),
-                                    backgroundColor: MaterialStateProperty.all<Color>(Colors.grey.shade300),
-                                    shape: MaterialStateProperty.all<RoundedRectangleBorder>(
-                                        RoundedRectangleBorder(
-                                            borderRadius: BorderRadius.circular(18.0),
-                                            side: BorderSide(color: Colors.white)
-                                        )
-                                    )
-                                ),
-                              ),
-                            ],
-                          ),
-                        ),
-                      ],
-                    ),
-
-                    Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      children: [
-                        Padding(
-                          padding: const EdgeInsets.fromLTRB(10.0, 15.0, 5.0, 15.0),
-                          child: Center(
-                            child: Text(
-                              "Compulsory",
-                              style: TextStyle(
-                                  color: Colors.black,
-                                  fontSize: 14.0,
-                                  fontWeight: FontWeight.bold
-                              ),
-                            ),
-                          ),
-                        ),
-                        Padding(
-                          padding: const EdgeInsets.only(right: 20.0),
-                          child: Row(
-                            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                            children: [
-                              TextButton(
-                                onPressed: (){},
-                                child: Text("View".toUpperCase(), style: TextStyle(fontSize: 10, color: Colors.black, fontWeight: FontWeight.bold),),
-                                style: ButtonStyle(
-                                    padding: MaterialStateProperty.all<EdgeInsets>(EdgeInsets.symmetric(horizontal: 15.0, vertical: 10.0)),
-                                    foregroundColor: MaterialStateProperty.all<Color>(Colors.red),
-                                    backgroundColor: MaterialStateProperty.all<Color>(Colors.grey.shade300),
-                                    shape: MaterialStateProperty.all<RoundedRectangleBorder>(
-                                        RoundedRectangleBorder(
-                                          borderRadius: BorderRadius.circular(18.0),
-                                          side: BorderSide(color: Colors.white),
-                                        )
-                                    )
-                                ),
-                              ),
-                              SizedBox(width: 5,),
-                              TextButton(
-                                onPressed: (){},
-                                child: Text("Edit".toUpperCase(), style: TextStyle(fontSize: 10, color: Colors.black, fontWeight: FontWeight.bold),),
-                                style: ButtonStyle(
-                                    padding: MaterialStateProperty.all<EdgeInsets>(EdgeInsets.symmetric(horizontal: 15.0, vertical: 10.0)),
-                                    foregroundColor: MaterialStateProperty.all<Color>(Colors.red),
-                                    backgroundColor: MaterialStateProperty.all<Color>(Colors.grey.shade300),
-                                    shape: MaterialStateProperty.all<RoundedRectangleBorder>(
-                                        RoundedRectangleBorder(
-                                          borderRadius: BorderRadius.circular(18.0),
-                                          side: BorderSide(color: Colors.white),
-                                        )
-                                    )
-                                ),
-                              ),
-                              SizedBox(width: 5,),
-                              ElevatedButton(
-                                onPressed: (){},
-                                child: Text("DELETE".toUpperCase(), style: TextStyle(fontSize: 10),),
-                                style: ButtonStyle(
-                                    padding: MaterialStateProperty.all<EdgeInsets>(EdgeInsets.symmetric(horizontal: 15.0, vertical: 10.0)),
-                                    foregroundColor: MaterialStateProperty.all<Color>(Colors.black),
-                                    backgroundColor: MaterialStateProperty.all<Color>(Colors.grey.shade300),
-                                    shape: MaterialStateProperty.all<RoundedRectangleBorder>(
-                                        RoundedRectangleBorder(
-                                            borderRadius: BorderRadius.circular(18.0),
-                                            side: BorderSide(color: Colors.white)
-                                        )
-                                    )
-                                ),
-                              ),
-                            ],
-                          ),
-                        ),
-                      ],
-                    ),
-                  ],
-                ),
                 SizedBox(height: 50.0,)
               ],
             ),

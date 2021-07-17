@@ -23,7 +23,7 @@ class _SubMgtState extends State<SubMgt> {
                 "Subject Management".toUpperCase(),
                 style: TextStyle(
                     color: Colors.white,
-                    fontSize: 21.0,
+                    fontSize: 18.0,
                     fontWeight: FontWeight.bold
                 ),
         ),
@@ -65,17 +65,18 @@ class _SubMgtState extends State<SubMgt> {
                   ),
                 ),
 
+
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     Padding(
-                      padding: const EdgeInsets.fromLTRB(55.0, 15.0, 5.0, 15.0),
+                      padding: const EdgeInsets.fromLTRB(35.0, 15.0, 5.0, 15.0),
                       child: Center(
                         child: Text(
                           "Compulsory",
                           style: TextStyle(
                               color: Colors.black,
-                              fontSize: 18.0,
+                              fontSize: 16.0,
                               fontWeight: FontWeight.bold
                           ),
                         ),
@@ -88,9 +89,9 @@ class _SubMgtState extends State<SubMgt> {
                         children: [
                           TextButton(
                             onPressed: (){},
-                            child: Text("UPDATE".toUpperCase(), style: TextStyle(fontSize: 14, color: Colors.black, fontWeight: FontWeight.bold),),
+                            child: Text("UPDATE".toUpperCase(), style: TextStyle(fontSize: 12, color: Colors.black,),),
                             style: ButtonStyle(
-                                padding: MaterialStateProperty.all<EdgeInsets>(EdgeInsets.symmetric(horizontal: 25.0, vertical: 10.0)),
+                                padding: MaterialStateProperty.all<EdgeInsets>(EdgeInsets.symmetric(horizontal: 20.0, vertical: 8.0)),
                                 foregroundColor: MaterialStateProperty.all<Color>(Colors.red),
                                 backgroundColor: MaterialStateProperty.all<Color>(Colors.grey.shade300),
                                 shape: MaterialStateProperty.all<RoundedRectangleBorder>(
@@ -101,12 +102,12 @@ class _SubMgtState extends State<SubMgt> {
                                 )
                             ),
                           ),
-                          SizedBox(width: 20,),
+                          SizedBox(width: 5,),
                           ElevatedButton(
                             onPressed: (){},
-                            child: Text("DELETE".toUpperCase(), style: TextStyle(fontSize: 14),),
+                            child: Text("DELETE".toUpperCase(), style: TextStyle(fontSize: 12),),
                             style: ButtonStyle(
-                                padding: MaterialStateProperty.all<EdgeInsets>(EdgeInsets.symmetric(horizontal: 25.0, vertical: 10.0)),
+                                padding: MaterialStateProperty.all<EdgeInsets>(EdgeInsets.symmetric(horizontal: 20.0, vertical: 8.0)),
                                 foregroundColor: MaterialStateProperty.all<Color>(Colors.black),
                                 backgroundColor: MaterialStateProperty.all<Color>(Colors.grey.shade300),
                                 shape: MaterialStateProperty.all<RoundedRectangleBorder>(
@@ -122,18 +123,17 @@ class _SubMgtState extends State<SubMgt> {
                     ),
                   ],
                 ),
-
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     Padding(
-                      padding: const EdgeInsets.fromLTRB(55.0, 15.0, 5.0, 15.0),
+                      padding: const EdgeInsets.fromLTRB(35.0, 15.0, 5.0, 15.0),
                       child: Center(
                         child: Text(
                           "Bin 1",
                           style: TextStyle(
                               color: Colors.black,
-                              fontSize: 18.0,
+                              fontSize: 16.0,
                               fontWeight: FontWeight.bold
                           ),
                         ),
@@ -146,9 +146,9 @@ class _SubMgtState extends State<SubMgt> {
                         children: [
                           TextButton(
                             onPressed: (){},
-                            child: Text("UPDATE".toUpperCase(), style: TextStyle(fontSize: 14, color: Colors.black, fontWeight: FontWeight.bold),),
+                            child: Text("UPDATE".toUpperCase(), style: TextStyle(fontSize: 12, color: Colors.black, ),),
                             style: ButtonStyle(
-                                padding: MaterialStateProperty.all<EdgeInsets>(EdgeInsets.symmetric(horizontal: 25.0, vertical: 10.0)),
+                                padding: MaterialStateProperty.all<EdgeInsets>(EdgeInsets.symmetric(horizontal: 20.0, vertical: 8.0)),
                                 foregroundColor: MaterialStateProperty.all<Color>(Colors.red),
                                 backgroundColor: MaterialStateProperty.all<Color>(Colors.grey.shade300),
                                 shape: MaterialStateProperty.all<RoundedRectangleBorder>(
@@ -159,12 +159,12 @@ class _SubMgtState extends State<SubMgt> {
                                 )
                             ),
                           ),
-                          SizedBox(width: 20,),
+                          SizedBox(width: 5,),
                           ElevatedButton(
                             onPressed: (){},
-                            child: Text("DELETE".toUpperCase(), style: TextStyle(fontSize: 14),),
+                            child: Text("DELETE".toUpperCase(), style: TextStyle(fontSize: 12),),
                             style: ButtonStyle(
-                                padding: MaterialStateProperty.all<EdgeInsets>(EdgeInsets.symmetric(horizontal: 25.0, vertical: 10.0)),
+                                padding: MaterialStateProperty.all<EdgeInsets>(EdgeInsets.symmetric(horizontal: 20.0, vertical: 8.0)),
                                 foregroundColor: MaterialStateProperty.all<Color>(Colors.black),
                                 backgroundColor: MaterialStateProperty.all<Color>(Colors.grey.shade300),
                                 shape: MaterialStateProperty.all<RoundedRectangleBorder>(
@@ -180,18 +180,17 @@ class _SubMgtState extends State<SubMgt> {
                     ),
                   ],
                 ),
-
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     Padding(
-                      padding: const EdgeInsets.fromLTRB(55.0, 15.0, 5.0, 15.0),
+                      padding: const EdgeInsets.fromLTRB(35.0, 15.0, 5.0, 15.0),
                       child: Center(
                         child: Text(
                           "Bin 2",
                           style: TextStyle(
                               color: Colors.black,
-                              fontSize: 18.0,
+                              fontSize: 16.0,
                               fontWeight: FontWeight.bold
                           ),
                         ),
@@ -204,9 +203,9 @@ class _SubMgtState extends State<SubMgt> {
                         children: [
                           TextButton(
                             onPressed: (){},
-                            child: Text("UPDATE".toUpperCase(), style: TextStyle(fontSize: 14, color: Colors.black, fontWeight: FontWeight.bold),),
+                            child: Text("UPDATE".toUpperCase(), style: TextStyle(fontSize: 12, color: Colors.black,),),
                             style: ButtonStyle(
-                                padding: MaterialStateProperty.all<EdgeInsets>(EdgeInsets.symmetric(horizontal: 25.0, vertical: 10.0)),
+                                padding: MaterialStateProperty.all<EdgeInsets>(EdgeInsets.symmetric(horizontal: 20.0, vertical: 8.0)),
                                 foregroundColor: MaterialStateProperty.all<Color>(Colors.red),
                                 backgroundColor: MaterialStateProperty.all<Color>(Colors.grey.shade300),
                                 shape: MaterialStateProperty.all<RoundedRectangleBorder>(
@@ -217,12 +216,12 @@ class _SubMgtState extends State<SubMgt> {
                                 )
                             ),
                           ),
-                          SizedBox(width: 20,),
+                          SizedBox(width: 5,),
                           ElevatedButton(
                             onPressed: (){},
-                            child: Text("DELETE".toUpperCase(), style: TextStyle(fontSize: 14),),
+                            child: Text("DELETE".toUpperCase(), style: TextStyle(fontSize: 12),),
                             style: ButtonStyle(
-                                padding: MaterialStateProperty.all<EdgeInsets>(EdgeInsets.symmetric(horizontal: 25.0, vertical: 10.0)),
+                                padding: MaterialStateProperty.all<EdgeInsets>(EdgeInsets.symmetric(horizontal: 20.0, vertical: 8.0)),
                                 foregroundColor: MaterialStateProperty.all<Color>(Colors.black),
                                 backgroundColor: MaterialStateProperty.all<Color>(Colors.grey.shade300),
                                 shape: MaterialStateProperty.all<RoundedRectangleBorder>(
@@ -351,9 +350,9 @@ class _SubMgtState extends State<SubMgt> {
                         children: [
                           TextButton(
                             onPressed: (){},
-                            child: Text("UPDATE".toUpperCase(), style: TextStyle(fontSize: 14, color: Colors.black, fontWeight: FontWeight.bold),),
+                            child: Text("UPDATE".toUpperCase(), style: TextStyle(fontSize: 12, color: Colors.black,),),
                             style: ButtonStyle(
-                                padding: MaterialStateProperty.all<EdgeInsets>(EdgeInsets.symmetric(horizontal: 25.0, vertical: 10.0)),
+                                padding: MaterialStateProperty.all<EdgeInsets>(EdgeInsets.symmetric(horizontal: 16.0, vertical: 10.0)),
                                 foregroundColor: MaterialStateProperty.all<Color>(Colors.red),
                                 backgroundColor: MaterialStateProperty.all<Color>(Colors.grey.shade300),
                                 shape: MaterialStateProperty.all<RoundedRectangleBorder>(
@@ -364,12 +363,12 @@ class _SubMgtState extends State<SubMgt> {
                                 )
                             ),
                           ),
-                          SizedBox(width: 10,),
+                          SizedBox(width: 5,),
                           ElevatedButton(
                             onPressed: (){},
-                            child: Text("DELETE".toUpperCase(), style: TextStyle(fontSize: 14),),
+                            child: Text("DELETE".toUpperCase(), style: TextStyle(fontSize: 12),),
                             style: ButtonStyle(
-                                padding: MaterialStateProperty.all<EdgeInsets>(EdgeInsets.symmetric(horizontal: 25.0, vertical: 10.0)),
+                                padding: MaterialStateProperty.all<EdgeInsets>(EdgeInsets.symmetric(horizontal: 16.0, vertical: 10.0)),
                                 foregroundColor: MaterialStateProperty.all<Color>(Colors.black),
                                 backgroundColor: MaterialStateProperty.all<Color>(Colors.grey.shade300),
                                 shape: MaterialStateProperty.all<RoundedRectangleBorder>(
@@ -465,9 +464,9 @@ class _SubMgtState extends State<SubMgt> {
                         children: [
                           TextButton(
                             onPressed: (){},
-                            child: Text("UPDATE".toUpperCase(), style: TextStyle(fontSize: 14, color: Colors.black, fontWeight: FontWeight.bold),),
+                            child: Text("UPDATE".toUpperCase(), style: TextStyle(fontSize: 12, color: Colors.black, ),),
                             style: ButtonStyle(
-                                padding: MaterialStateProperty.all<EdgeInsets>(EdgeInsets.symmetric(horizontal: 25.0, vertical: 10.0)),
+                                padding: MaterialStateProperty.all<EdgeInsets>(EdgeInsets.symmetric(horizontal: 16.0, vertical: 10.0)),
                                 foregroundColor: MaterialStateProperty.all<Color>(Colors.red),
                                 backgroundColor: MaterialStateProperty.all<Color>(Colors.grey.shade300),
                                 shape: MaterialStateProperty.all<RoundedRectangleBorder>(
@@ -481,9 +480,9 @@ class _SubMgtState extends State<SubMgt> {
                           SizedBox(width: 10,),
                           ElevatedButton(
                             onPressed: (){},
-                            child: Text("DELETE".toUpperCase(), style: TextStyle(fontSize: 14),),
+                            child: Text("DELETE".toUpperCase(), style: TextStyle(fontSize: 12),),
                             style: ButtonStyle(
-                                padding: MaterialStateProperty.all<EdgeInsets>(EdgeInsets.symmetric(horizontal: 25.0, vertical: 10.0)),
+                                padding: MaterialStateProperty.all<EdgeInsets>(EdgeInsets.symmetric(horizontal: 16.0, vertical: 10.0)),
                                 foregroundColor: MaterialStateProperty.all<Color>(Colors.black),
                                 backgroundColor: MaterialStateProperty.all<Color>(Colors.grey.shade300),
                                 shape: MaterialStateProperty.all<RoundedRectangleBorder>(
@@ -579,9 +578,9 @@ class _SubMgtState extends State<SubMgt> {
                         children: [
                           TextButton(
                             onPressed: (){},
-                            child: Text("UPDATE".toUpperCase(), style: TextStyle(fontSize: 14, color: Colors.black, fontWeight: FontWeight.bold),),
+                            child: Text("UPDATE".toUpperCase(), style: TextStyle(fontSize: 12, color: Colors.black, ),),
                             style: ButtonStyle(
-                                padding: MaterialStateProperty.all<EdgeInsets>(EdgeInsets.symmetric(horizontal: 25.0, vertical: 10.0)),
+                                padding: MaterialStateProperty.all<EdgeInsets>(EdgeInsets.symmetric(horizontal: 16.0, vertical: 10.0)),
                                 foregroundColor: MaterialStateProperty.all<Color>(Colors.red),
                                 backgroundColor: MaterialStateProperty.all<Color>(Colors.grey.shade300),
                                 shape: MaterialStateProperty.all<RoundedRectangleBorder>(
@@ -595,9 +594,9 @@ class _SubMgtState extends State<SubMgt> {
                           SizedBox(width: 10,),
                           ElevatedButton(
                             onPressed: (){},
-                            child: Text("DELETE".toUpperCase(), style: TextStyle(fontSize: 14),),
+                            child: Text("DELETE".toUpperCase(), style: TextStyle(fontSize: 12),),
                             style: ButtonStyle(
-                                padding: MaterialStateProperty.all<EdgeInsets>(EdgeInsets.symmetric(horizontal: 25.0, vertical: 10.0)),
+                                padding: MaterialStateProperty.all<EdgeInsets>(EdgeInsets.symmetric(horizontal: 16.0, vertical: 10.0)),
                                 foregroundColor: MaterialStateProperty.all<Color>(Colors.black),
                                 backgroundColor: MaterialStateProperty.all<Color>(Colors.grey.shade300),
                                 shape: MaterialStateProperty.all<RoundedRectangleBorder>(

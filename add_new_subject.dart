@@ -469,43 +469,46 @@ class RadioGroupState extends State<RadioGroup>{
         //   padding: EdgeInsets.all(14),
         //   child: Text('$default_choice', style: TextStyle(fontSize: 23.0, fontWeight: FontWeight.bold),),
         // ),
-        Padding(
-          padding: const EdgeInsets.fromLTRB(30, 20, 30, 10),
-          child: ElevatedButton(
-            onPressed: (){ Navigator.of(context).pushNamed('/addnewsub');},
-            child: Text("submit".toUpperCase(), style: TextStyle(fontSize: 14, fontWeight:FontWeight.w900),),
-            style: ButtonStyle(
-                padding: MaterialStateProperty.all<EdgeInsets>(EdgeInsets.symmetric(horizontal: 25.0, vertical: 10.0)),
-                foregroundColor: MaterialStateProperty.all<Color>(Colors.black),
-                backgroundColor: MaterialStateProperty.all<Color>(Colors.blue.shade100),
-                shape: MaterialStateProperty.all<RoundedRectangleBorder>(
-                    RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(10.0),
-                      //side: BorderSide(color: Colors.black)
+        Center(
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              ElevatedButton(
+                onPressed: (){ Navigator.of(context).pushNamed('/addnewsub');},
+                child: Text("submit".toUpperCase(), style: TextStyle(fontSize: 14, fontWeight:FontWeight.w900),),
+                style: ButtonStyle(
+                    padding: MaterialStateProperty.all<EdgeInsets>(EdgeInsets.symmetric(horizontal: 25.0, vertical: 10.0)),
+                    foregroundColor: MaterialStateProperty.all<Color>(Colors.black),
+                    backgroundColor: MaterialStateProperty.all<Color>(Colors.blue.shade100),
+                    shape: MaterialStateProperty.all<RoundedRectangleBorder>(
+                        RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(10.0),
+                          //side: BorderSide(color: Colors.black)
+                        )
                     )
-                )
-            ),
-          ),
-        ),
+                ),
+              ),
+              SizedBox(width: 15.0,),
+              ElevatedButton(
+                onPressed: (){},
+                child: Text("cancel".toUpperCase(), style: TextStyle(fontSize: 14, fontWeight:FontWeight.w900),),
+                style: ButtonStyle(
+                    padding: MaterialStateProperty.all<EdgeInsets>(EdgeInsets.symmetric(horizontal: 25.0, vertical: 10.0)),
+                    foregroundColor: MaterialStateProperty.all<Color>(Colors.black),
+                    backgroundColor: MaterialStateProperty.all<Color>(Colors.blue.shade100),
+                    shape: MaterialStateProperty.all<RoundedRectangleBorder>(
+                        RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(10.0),
+                          //side: BorderSide(color: Colors.black)
+                        )
+                    )
+                ),
+              ),
+            ],
 
-        Padding(
-          padding: const EdgeInsets.only(bottom: 30.0),
-          child: ElevatedButton(
-            onPressed: (){},
-            child: Text("cancel".toUpperCase(), style: TextStyle(fontSize: 14, fontWeight:FontWeight.w900),),
-            style: ButtonStyle(
-                padding: MaterialStateProperty.all<EdgeInsets>(EdgeInsets.symmetric(horizontal: 25.0, vertical: 10.0)),
-                foregroundColor: MaterialStateProperty.all<Color>(Colors.black),
-                backgroundColor: MaterialStateProperty.all<Color>(Colors.blue.shade100),
-                shape: MaterialStateProperty.all<RoundedRectangleBorder>(
-                    RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(10.0),
-                      //side: BorderSide(color: Colors.black)
-                    )
-                )
-            ),
           ),
         ),
+        SizedBox(height: 25.0,),
       ],
     );
   }

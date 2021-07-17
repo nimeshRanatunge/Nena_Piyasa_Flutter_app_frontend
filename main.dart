@@ -25,7 +25,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'login in',
       theme: ThemeData(
-        primarySwatch: Colors.blue
+        primarySwatch: Colors.amber
       ),
       home: loginScreen(),
       routes: <String, WidgetBuilder>{
